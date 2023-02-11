@@ -11,6 +11,9 @@ module.exports = {
         ivory: '#f6f7eb',
         burgundy: '#851e2e',
         amethyst: '#8367c7'
+      },
+      fontFamily: {
+        genos: ['Genos', 'sans-serif']
       }
     },
   },

@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+      <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,400;0,500;1,400;1,500&display=optional" rel="stylesheet" />
+      </Head>
       <body>
         <Main />
         <NextScript />
