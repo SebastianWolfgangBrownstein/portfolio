@@ -2,8 +2,10 @@
 
 export const Hero = () => {
     return (
-        <section className="w-full h-screen bg-slate-800">
-
+        <section className="w-full h-screen bg-oxfordblue">
+            <div>
+                
+            </div>
         </section>
     );
 };
