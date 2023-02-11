@@ -1,7 +1,7 @@
 
 const Testimonials = () => {
   return (
-    <section>
+    <section className="w-full h-200 bg-oxfordblue text-center px-150 py-36">
         Testimonials
     </section>
   )

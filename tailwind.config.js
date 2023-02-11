@@ -13,7 +13,13 @@ module.exports = {
         amethyst: '#8367c7'
       },
       fontFamily: {
-        genos: ['Genos', 'sans-serif']
+        genos: ['Genos', 'sans-serif'],
+        secular: ['Secular One', 'sans-serif'],
+      },
+      spacing: {
+        100: "30rem",
+        150: "35rem",
+        200: "40rem"
       }
     },
   },
