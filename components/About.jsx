@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <section className="w-full h-200 bg-amethyst text-center px-150 py-36">
+    <section className="w-full h-200 bg-midnight-100 text-center px-150 py-36">
         <h2 className="text-4xl text-ivory font-secular mb-3">Hi, I&apos;m Seb. Nice to meet you.</h2>
         <p className="text-ivory text-xl">
             I started my journey as a developer over 7 years ago. After studying Aerospace Engineering 

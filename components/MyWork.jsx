@@ -13,6 +13,9 @@ const MyWork = () => {
         <div>
             <h3>Divine Mud</h3>
         </div>
+        <div>
+            <h3>Personal Website</h3>
+        </div>
     </section>
   )
 }
