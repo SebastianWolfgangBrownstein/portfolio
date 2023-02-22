@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MyWork = () => {
   return (
-    <section className="w-full bg-oxfordblue text-center px-60 pt-10 pb-44">
+    <section className="w-full bg-oxfordblue text-center px-72 pt-10 pb-44">
         <h2 className="text-3xl font-secular text-lightgray mb-10">My Recent Work</h2>
         <ul>
             <li className="grid grid-cols-12">
@@ -19,14 +19,14 @@ const MyWork = () => {
                     </div>
                     <div className="">
                         <ul className="flex justify-end space-x-3 text-right">
-                            <li className="border border-nextjs text-nextjs rounded-full px-3">NextJS</li>
-                            <li className="border border-typescript text-typescript rounded-full px-3">Typescript</li>
-                            <li className="border border-python text-python rounded-full px-3">Python</li>
-                            <li className="border border-flask text-flask rounded-full px-3">Flask</li>
-                            <li className="border border-sass text-sass rounded-full px-3">Sass</li>
-                            <li className="border border-mysql text-mysql rounded-full px-3">MySQL</li>
-                            <li className="border border-jest text-jest rounded-full px-3">Jest</li>
-                            <li className="border border-ffmpeg text-ffmpeg rounded-full px-3">ffmpeg</li>
+                            <li className="border border-nextjs text-nextjs font-genos text-xl bg-overlay-400 rounded-full px-3 pb-1">NextJS</li>
+                            <li className="border border-typescript text-typescript font-genos text-xl bg-overlay-400 rounded-full px-3">Typescript</li>
+                            <li className="border border-sass text-sass font-genos text-xl bg-overlay-400 rounded-full px-3">Sass</li>
+                            <li className="border border-python text-python font-genos text-xl bg-overlay-400 rounded-full px-3">Python</li>
+                            <li className="border border-mysql text-mysql font-genos text-xl bg-overlay-400 rounded-full px-3">MySQL</li>
+                            <li className="border border-jest text-jest font-genos text-xl bg-overlay-400 rounded-full px-3">Jest</li>
+                            <li className="border border-flask text-flask font-genos text-xl bg-overlay-400 rounded-full px-3">Flask</li>
+                            <li className="border border-ffmpeg text-ffmpeg font-genos text-xl bg-overlay-400 rounded-full px-3">ffmpeg</li>
                         </ul>
                     </div>
                 </div>

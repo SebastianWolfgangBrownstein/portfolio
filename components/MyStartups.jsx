@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 
 const MyStartups = () => {
   return (
@@ -9,24 +9,44 @@ const MyStartups = () => {
         </div>
         
         <div className="grid grid-cols-4 gap-x-4 px-60">
-            <div className="bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
-                <h3>SXD</h3>
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+                <div className="grid grid-cols-4 w-full mb-6">
+                    <div className="col-start-2 col-end-4 pt-7">
+                        <Image src="/images/SXDLogo.png" alt="SXD" width={300} height={50} className="inline-block"/>
+                    </div>
+                </div>
                 <p>A decentralized cloud storage platform for securely storing large multimedia files.</p>
             </div>
-            <div className="bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
-                <h3>Arxade</h3>
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+                <div className="grid grid-cols-5 w-full mb-6">
+                    <div className="col-start-2 col-end-5">
+                        <Image src="/images/ArxadeLogo.png" alt="Arxade" width={300} height={100}/>
+                    </div>
+                </div>
                 <p>A suite of backend APIs for live streaming, real-time communication, and multiplayer gaming.</p>
             </div>
-            <div className="bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
-                <h3>CamBling</h3>
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+                <div className="grid grid-cols-5 w-full mb-6">
+                    <div className="col-start-2 col-end-5">
+                        <Image src="/images/CamBlingLogo.png" alt='CamBling' width={200} height={50}/>
+                    </div>
+                </div>
                 <p>A gamified adult webcam site with a fully modernized design & disruptive performer policies.</p>
             </div>
-            <div className="bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
-                <h3>Personafi</h3>
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+                <div className="grid grid-cols-5">
+                    <div className="relative col-start-2 col-end-5 pb-5">
+                        <Image src="/images/PersonafiLogo.png" alt="Personafi" width={220} height={50} className="absolute -top-8 "/>
+                    </div>
+                </div>
                 <p>A marketplace of voice & personality skins for electronic personal assistants like Alexa.</p>
             </div>
         </div>
-        
+        <div className="mt-32">
+            <h2 className="text-2xl mb-3">Interested in collaborating with me?</h2>
+            <p className="text-lg mb-6">I&apos;m always open to discussing development work or partnership opportunities.</p>
+            <button className="border border-mint text-mint px-14 py-3 rounded-full">Start a conversation</button>
+        </div>
     </section>
   )
 }
