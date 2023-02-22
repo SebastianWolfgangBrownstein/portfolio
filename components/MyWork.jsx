@@ -1,35 +1,38 @@
-
+import Image from "next/image";
 
 const MyWork = () => {
   return (
-    <section className="w-full bg-oxfordblue text-center px-60 py-10">
-        <h2 className="text-3xl font-secular text-ivory mb-10">My Recent Work</h2>
-        <div className="border border-mint grid grid-cols-2">
-            <div>
-
-            </div>
-            <div>
-                <div className="text-right">
-                    <span className="text-sm text-mint">Featured Project</span>
-                    <h3 className="font-secular text-3xl">ProtoVibes</h3>
+    <section className="w-full bg-oxfordblue text-center px-60 pt-10 pb-44">
+        <h2 className="text-3xl font-secular text-lightgray mb-10">My Recent Work</h2>
+        <ul>
+            <li className="grid grid-cols-12">
+                <div className="bg-midnight-100 col-start-1 col-end-8 row-start-1 row-end-[-1] relative h-96 w-full rounded-md overflow-hidden">
+                    <Image className="opacity-60 transition-all duration-300 ease-linear hover:opacity-100" src="/images/ProtoVibesScreenshot.png" fill alt="ProtoVibes"/>
                 </div>
-                <div className="text-right">
-                    <p>A web tool for converting video files to raw audio. Achieved 10-15% faster conversions than alternatives while allowing the user full control over the file&apos;s metadata, output format, and audio quality.</p>
+                <div className="col-start-7 col-end-[-1] row-start-1 row-end-[-1] z-10 pt-7 pointer-events-none">
+                    <div className="text-right">
+                        <p className="text-sm text-mint my-2.5">Featured Project</p>
+                        <h3 className="font-secular text-lightgray text-3xl mb-5">ProtoVibes</h3>
+                    </div>
+                    <div className="text-right bg-grayblue p-6 mb-5 rounded-md shadow-md">
+                        <p className="text-lightgray">A web tool for converting video files to raw audio. Achieved 10-15% faster conversions than alternatives while allowing the user full control over the file&apos;s metadata, output format, and audio quality.</p>
+                    </div>
+                    <div className="">
+                        <ul className="flex justify-end space-x-3 text-right">
+                            <li className="border border-nextjs text-nextjs rounded-full px-3">NextJS</li>
+                            <li className="border border-typescript text-typescript rounded-full px-3">Typescript</li>
+                            <li className="border border-python text-python rounded-full px-3">Python</li>
+                            <li className="border border-flask text-flask rounded-full px-3">Flask</li>
+                            <li className="border border-sass text-sass rounded-full px-3">Sass</li>
+                            <li className="border border-mysql text-mysql rounded-full px-3">MySQL</li>
+                            <li className="border border-jest text-jest rounded-full px-3">Jest</li>
+                            <li className="border border-ffmpeg text-ffmpeg rounded-full px-3">ffmpeg</li>
+                        </ul>
+                    </div>
                 </div>
-                <div className="">
-                    <ul className="flex justify-end space-x-3 text-right">
-                        <li>NextJS</li>
-                        <li>Typescript</li>
-                        <li>Python</li>
-                        <li>Flask</li>
-                        <li>Sass</li>
-                        <li>MySQL</li>
-                        <li>Jest</li>
-                        <li>ffmpeg</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            </li>
+        </ul>
+        
         {/* <div className="border border-mint grid grid-cols-2">
             <div>
                 <div>

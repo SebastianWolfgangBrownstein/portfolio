@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       colors: {
         oxfordblue: '#05062D',
+        grayblue: '#0e1b33',
+        lightgray: '#ccd6f6',
         ivory: '#f6f7eb',
         burgundy: '#851e2e',
         amethyst: '#8367c7',
@@ -17,7 +19,15 @@ module.exports = {
           300: '#0b525b',
           400: '#144552'
         },
-        mint: '#affcaf'
+        mint: '#affcaf',
+        nextjs: '#ffffff',
+        typescript: '#007acc',
+        python: '#ffd141',
+        flask: '#ffffff',
+        sass: '#cd6799',
+        mysql: '#e48e00',
+        jest: '#c63d14',
+        ffmpeg: '#388e3c'
       },
       fontFamily: {
         genos: ['Genos', 'sans-serif'],
