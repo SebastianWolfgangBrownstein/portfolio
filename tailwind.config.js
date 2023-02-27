@@ -13,12 +13,14 @@ module.exports = {
         ivory: '#f6f7eb',
         burgundy: '#851e2e',
         amethyst: '#8367c7',
+        redlight: '#d81e5b', //#a10702 //#96031a //#590004 
         midnight: {
           100: '#006466',
           200: '#065a60',
           300: '#0b525b',
           400: '#144552'
         },
+        purplenight: '#6153cc',
         overlay: {
           100: 'rgba(0, 0, 0, 0.1)',
           200: 'rgba(0, 0, 0, 0.2)',
