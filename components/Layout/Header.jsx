@@ -6,7 +6,7 @@ export const Header = () => {
         <header className="absolute top-0 z-10 flex w-full items-center justify-between py-5 px-10 lg:py-10 lg:px-60">
             <Link href="/">
                 <div>
-                    <span className="text-5xl font-genos text-ivory hover:cursor-pointer">
+                    <span className="text-5xl font-genos text-gold hover:cursor-pointer">
                         SEB
                     </span>
                 </div>

@@ -9,18 +9,27 @@ module.exports = {
       colors: {
         oxfordblue: '#05062D',
         grayblue: '#0e1b33',
-        lightgray: '#ccd6f6',
+        lightgray: '#c0e8f9', //#ccd6f6
+        darkgray: '#5e5e5e',
         ivory: '#f6f7eb',
         burgundy: '#851e2e',
         amethyst: '#8367c7',
-        redlight: '#d81e5b', //#a10702 //#96031a //#590004 
+        redlight: '#96031a',//'#d81e5b', //#a10702 //#96031a //#590004 
+        blood: '#870000',
+        licorice: '#190a05',
         midnight: {
           100: '#006466',
           200: '#065a60',
           300: '#0b525b',
           400: '#144552'
         },
-        purplenight: '#6153cc',
+        purplenight: '#3454d1', // '#6153cc' // #6d72c3 // #4e4187
+        gunmetal: '#0f1314',
+        brightgreen: '#61e786',
+        pink: '',
+        gold: '#d6ad30', //#ae9036 //#c5a544 //#caad53
+        tan: '#dbd3ad', //'#cbac88'
+        fireorange: '#f3752b',
         overlay: {
           100: 'rgba(0, 0, 0, 0.1)',
           200: 'rgba(0, 0, 0, 0.2)',
@@ -43,6 +52,7 @@ module.exports = {
       fontFamily: {
         genos: ['Genos', 'sans-serif'],
         secular: ['Secular One', 'sans-serif'],
+        play: ['Play', 'sans-serif']
       },
       spacing: {
         100: "30rem",

@@ -7,9 +7,9 @@ import {
 
 const Skills = () => {
   return (
-    <section className="relative w-full bg-oxfordblue text-center px-5 lg:px-60 lg:py-36">
+    <section className="relative w-full bg-gunmetal border-t border-gold text-center px-5 lg:px-60 lg:py-36">
         <div className="lg:-mt-72 lg:grid lg:grid-cols-3 
-        lg:border border-midnight-100 divide-y lg:divide-x divide-solid divide-inherit rounded-xl bg-oxfordblue ">
+        lg:border border-gold divide-y lg:divide-x divide-solid divide-inherit rounded-xl bg-gunmetal ">
             
             <SkillSection 
                 icon={(
