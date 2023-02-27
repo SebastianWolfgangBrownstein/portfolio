@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import Startup from './Startup'
-import { ChatIcon } from '@sebthedev/swanky-icons'
+import StartConversation from './StartConversation';
 
 const MyStartups = () => {
   return (
@@ -40,25 +39,9 @@ const MyStartups = () => {
                 summary="A marketplace of voice & personality skins for electronic personal assistants like Alexa."
             />
         </div>
-
-        <div className="mt-32">
-            <h2 className="text-2xl mb-3">Interested in collaborating with me?</h2>
-            <p className="text-lg mb-6">I&apos;m always open to discussing development work or partnership opportunities.</p>
-            <button className="border border-mint text-mint px-14 py-3 rounded-full hover:bg-mint hover:text-black transition-all duration-200 shadow-lg">
-                <div className="flex">
-                    <div className="w-10">
-                        <ChatIcon 
-                            width={26}
-                            height={26}
-                            fillColor={"#affcaf"}
-                        />
-                    </div>
-                    <p>Start a conversation</p>
-                </div>
-                
-                
-            </button>
-        </div>
+        
+        <StartConversation />
+        
     </section>
   )
 }
