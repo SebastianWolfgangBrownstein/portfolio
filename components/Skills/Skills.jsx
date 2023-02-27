@@ -6,9 +6,10 @@ import {
 
 const Skills = () => {
   return (
-    <section className="relative w-full bg-oxfordblue text-center px-60 py-36">
-        <div className="-mt-72 grid grid-cols-3 border border-midnight-100 divide-x divide-solid divide-inherit rounded-xl bg-oxfordblue ">
-            <div className="py-16 px-8">
+    <section className="relative w-full bg-oxfordblue text-center px-5 lg:px-60 lg:py-36">
+        <div className="lg:-mt-72 lg:grid lg:grid-cols-3 
+        lg:border border-midnight-100 divide-y lg:divide-x divide-solid divide-inherit rounded-xl bg-oxfordblue ">
+            <div className="py-20 px-5 lg:py-16 lg:px-8">
                 <div className="flex justify-center mb-6">
                     <div className="relative w-20 h-20 border border-mint rounded-full bg-mint">
                         <ArchitectIcon 
@@ -20,10 +21,10 @@ const Skills = () => {
                     </div>
                 </div>
                 
-                <h2 className="text-2xl font-secular mb-5 text-ivory">System Architect</h2>
-                <p className="mb-10 text-lg text-ivory">I care about designing systems that are durable, evolvable, and scalable before ever writing a single line of code. </p>
+                <h2 className="text-2xl font-secular mb-7 lg:mb-5 text-ivory">System Architect</h2>
+                <p className="mb-16 lg:mb-10 text-lg text-ivory">I care about designing systems that are durable, evolvable, and scalable before ever writing a single line of code. </p>
 
-                <div className="mb-10">
+                <div className="mb-14 lg:mb-10">
                     <h3 className="mb-2 text-amethyst">Things I enjoy designing:</h3>
                     <p className="text-ivory">Microservices, Interfaces, Modules, Libraries, Packages</p>
                 </div>
@@ -40,7 +41,7 @@ const Skills = () => {
                     </ul>
                 </div>
             </div>
-            <div className="py-16 px-8">
+            <div className="py-20 px-5 lg:py-16 lg:px-8">
                 <div className="flex justify-center mb-6">
                     <div className="relative w-20 h-20 border border-mint rounded-full bg-mint">
                         <CodeIcon 

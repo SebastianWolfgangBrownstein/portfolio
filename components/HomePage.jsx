@@ -1,9 +1,9 @@
-import Hero from "./Hero";
-import About from './About';
-import Skills from './Skills';
-import MyWork from './MyWork';
-import MyStartups from './MyStartups';
-import Testimonials from "./Testimonials";
+import Hero from "./Hero/Hero";
+import About from './About/About';
+import Skills from './Skills/Skills';
+import MyWork from './Work/MyWork';
+import MyStartups from './Startups/MyStartups';
+import Testimonials from "./Testimonials/Testimonials";
 
 export const HomePage = () => {
     return (
