@@ -58,6 +58,7 @@ const Skills = () => {
                 )}
                 title="Frontend Developer"
                 summary="I&apos;m passionate about bringing complex tools to life through visually striking user interfaces that are equal parts elegant & intuitive."
+                specificsTitle="Languages I speak:"
                 specificsList="Javascript, HTML, CSS, Sass"
                 toolsTitle="Tech & Dev Tools:"
                 tools={["ReactJS", "NextJS", "RxJS", "Tailwind", "Bootstrap", "SVG", "VSCode", "Illustrator", "Photoshop", "AfterEffects", "Blender"]}
