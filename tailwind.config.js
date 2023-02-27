@@ -28,7 +28,7 @@ module.exports = {
           600: 'rgba(0, 0, 0, 0.6)',
           700: 'rgba(0, 0, 0, 0.7)',
         },
-        mint: '#affcaf',
+        mint: '#affcaf', //#bfd7b5
         nextjs: '#ffffff',
         typescript: '#007acc',
         python: '#ffd141',
