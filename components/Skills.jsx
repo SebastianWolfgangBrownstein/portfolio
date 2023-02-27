@@ -1,4 +1,8 @@
-
+import { 
+    ArchitectIcon,
+    CodeIcon,
+    RollerIcon 
+} from '@sebthedev/swanky-icons'
 
 const Skills = () => {
   return (
@@ -7,7 +11,12 @@ const Skills = () => {
             <div className="py-16 px-8">
                 <div className="flex justify-center mb-6">
                     <div className="relative w-20 h-20 border border-mint rounded-full bg-mint">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute left-4 top-3" height="48" viewBox="0 96 960 960" width="48"><path d="m269 936-9-66 127-350q11 11 24.5 18t28.5 12L317 889l-48 47Zm422 0-48-47-125-338q15-5 29-12t25-18l128 349-9 66ZM480 536q-50 0-85-35t-35-85q0-42 24.5-74.5T450 300v-84h60v84q41 9 65.5 41.5T600 416q0 50-35 85t-85 35Zm0-60q25 0 42.5-17.5T540 416q0-25-17.5-42.5T480 356q-25 0-42.5 17.5T420 416q0 25 17.5 42.5T480 476Z"/></svg>
+                        <ArchitectIcon 
+                            width={48}
+                            height={48}
+                            fillColor="#05062d"
+                            className="absolute left-4 top-3"
+                        />
                     </div>
                 </div>
                 
@@ -34,7 +43,12 @@ const Skills = () => {
             <div className="py-16 px-8">
                 <div className="flex justify-center mb-6">
                     <div className="relative w-20 h-20 border border-mint rounded-full bg-mint">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute left-4 top-3.5" height="48" viewBox="0 96 960 960" width="48"><path d="M320 814 80 574l242-242 43 43-199 199 197 197-43 43Zm318 2-43-43 199-199-197-197 43-43 240 240-242 242Z"/></svg>
+                        <CodeIcon 
+                            width={48}
+                            height={48}
+                            fillColor="#05062d"
+                            className="absolute left-4 top-3.5"
+                        />
                     </div>
                 </div>
                 <h2 className="text-2xl font-secular mb-5 text-ivory">Backend Developer</h2>
@@ -68,7 +82,12 @@ const Skills = () => {
             <div className="py-16 px-8">
                 <div className="flex justify-center mb-6">
                     <div className="relative w-20 h-20 border border-mint rounded-full bg-mint">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="absolute left-4 top-3.5" height="48" viewBox="0 96 960 960" width="48"><path d="M583 1016H440q-14.45 0-24.225-9.78Q406 996.45 406 982V732q0-14.45 9.775-24.225Q425.55 698 440 698h41V565H140q-24.75 0-42.375-17.625T80 505V312q0-24.75 17.625-42.375T140 252h83v-42q0-14.45 9.775-24.225Q242.55 176 257 176h509q14.45 0 24.225 9.775Q800 195.55 800 210v152q0 14.45-9.775 24.225Q780.45 396 766 396H257q-14.45 0-24.225-9.775Q223 376.45 223 362v-50h-83v193h341q24.75 0 42.375 17.625T541 565v133h42q14.45 0 24.225 9.775Q617 717.55 617 732v250q0 14.45-9.775 24.22Q597.45 1016 583 1016ZM283 236v100-100Zm183 720h91V758h-91v198ZM283 336h457V236H283v100Zm183 620h91-91Z"/></svg>
+                        <RollerIcon 
+                            width={48}
+                            height={48}
+                            fillColor="#05062d"
+                            className="absolute left-4 top-3.5"
+                        />
                     </div>
                 </div>
                 

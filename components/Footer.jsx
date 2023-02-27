@@ -12,7 +12,7 @@ export const Footer = () => {
                 </div>
                 
                 <div className="grow px-3 w-full">
-                    <button className="text-lg border border-mint px-12 py-3 rounded-full transition-all duration-200 hover:bg-mint hover:text-black">Let&apos;s do this</button>
+                    <button className="text-lg border border-mint px-12 py-3 rounded-full transition-all duration-200 hover:bg-mint hover:text-black shadow-lg">Let&apos;s do this</button>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { ChatIcon } from '@sebthedev/swanky-icons'
 
 const MyStartups = () => {
   return (
@@ -9,7 +10,7 @@ const MyStartups = () => {
         </div>
         
         <div className="grid grid-cols-4 gap-x-4 px-60">
-            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14 shadow-lg">
                 <div className="grid grid-cols-4 w-full mb-6">
                     <div className="col-start-2 col-end-4 pt-7">
                         <Image src="/images/SXDLogo.png" alt="SXD" width={300} height={50} className="inline-block"/>
@@ -17,7 +18,7 @@ const MyStartups = () => {
                 </div>
                 <p>A decentralized cloud storage platform for securely storing large multimedia files.</p>
             </div>
-            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14 shadow-lg">
                 <div className="grid grid-cols-5 w-full mb-6">
                     <div className="col-start-2 col-end-5">
                         <Image src="/images/ArxadeLogo.png" alt="Arxade" width={300} height={100}/>
@@ -25,7 +26,7 @@ const MyStartups = () => {
                 </div>
                 <p>A suite of backend APIs for live streaming, real-time communication, and multiplayer gaming.</p>
             </div>
-            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14 shadow-lg">
                 <div className="grid grid-cols-5 w-full mb-6">
                     <div className="col-start-2 col-end-5">
                         <Image src="/images/CamBlingLogo.png" alt='CamBling' width={200} height={50}/>
@@ -33,7 +34,7 @@ const MyStartups = () => {
                 </div>
                 <p>A gamified adult webcam site with a fully modernized design & disruptive performer policies.</p>
             </div>
-            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14">
+            <div className="grid grid-rows-2 bg-oxfordblue border border-oxfordblue rounded-xl px-5 py-14 shadow-lg">
                 <div className="grid grid-cols-5">
                     <div className="relative col-start-2 col-end-5 pb-5">
                         <Image src="/images/PersonafiLogo.png" alt="Personafi" width={220} height={50} className="absolute -top-8 "/>
@@ -45,7 +46,21 @@ const MyStartups = () => {
         <div className="mt-32">
             <h2 className="text-2xl mb-3">Interested in collaborating with me?</h2>
             <p className="text-lg mb-6">I&apos;m always open to discussing development work or partnership opportunities.</p>
-            <button className="border border-mint text-mint px-14 py-3 rounded-full">Start a conversation</button>
+            <button className="border border-mint text-mint px-14 py-3 rounded-full hover:bg-mint hover:text-black transition-all duration-200 shadow-lg">
+                <div className="flex">
+                    <div className="w-10">
+                        <ChatIcon 
+                            width={26}
+                            height={26}
+                            fillColor={"#affcaf"}
+                        />
+                        {/* <svg xmlns="http://www.w3.org/2000/svg" height="26" fill="#affcaf" viewBox="0 96 960 960" width="26"><path d="M240 657h313v-60H240v60Zm0-130h480v-60H240v60Zm0-130h480v-60H240v60ZM80 976V236q0-23 18-41.5t42-18.5h680q23 0 41.5 18.5T880 236v520q0 23-18.5 41.5T820 816H240L80 976Zm60-145 75-75h605V236H140v595Zm0-595v595-595Z"/></svg> */}
+                    </div>
+                    <p>Start a conversation</p>
+                </div>
+                
+                
+            </button>
         </div>
     </section>
   )
