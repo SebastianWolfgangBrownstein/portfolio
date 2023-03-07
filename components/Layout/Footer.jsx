@@ -19,7 +19,7 @@ export const Footer = () => {
             </div>
             <div className="flex space-x-5 mb-16">
                 <a href="https://www.linkedin.com/in/swolfgangb/" rel="noreferrer noopener" target="_blank">
-                    <div className="flex justify-center items-center w-12 h-12 border-2 bg-byzantine border-byzantine rounded-full">
+                    <div className="flex justify-center items-center w-12 h-12 border-2 bg-byzantine border-byzantine hover:bg-gold hover:border-gold transition-all duration-500 rounded-full">
                         <LinkedinIcon 
                             width={28}
                             height={28}
@@ -28,7 +28,7 @@ export const Footer = () => {
                     </div>
                 </a>
                 <a href="https://github.com/SebastianWolfgangBrownstein" rel="noreferrer noopener" target="_blank">
-                    <div className="flex justify-center items-center w-12 h-12  bg-gunmetal border-byzantine rounded-full">
+                    <div className="flex justify-center items-center w-12 h-12  bg-gunmetal border-byzantine hover:bg-gold hover:border-gold transition-all duration-500 rounded-full">
                             <GithubIcon 
                                 width={50}
                                 height={50}
@@ -37,7 +37,7 @@ export const Footer = () => {
                     </div>
                 </a>
                 <a href="mailto:sbrownstein.dev@gmail.com">
-                    <div className="flex justify-center items-center pb-1 w-12 h-12 border-2 border-byzantine bg-byzantine rounded-full">
+                    <div className="flex justify-center items-center pb-1 w-12 h-12 border-2 border-byzantine bg-byzantine hover:bg-gold hover:border-gold transition-all duration-500 rounded-full">
                         <EnvelopeIcon 
                             width={27}
                             height={27}
