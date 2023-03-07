@@ -5,7 +5,7 @@ const StartConversation = () => {
         <div className="mt-32">
             <h2 className="font-play text-gold text-xl lg:text-2xl mb-5 lg:mb-3">Interested in collaborating with me?</h2>
             <p className="px-3 lg:px-0 text-lg text-tan mb-16 lg:mb-6">I&apos;m always open to discussing development work or partnership opportunities.</p>
-            <button className="border border-purplenight text-purplenight px-14 py-3 rounded-full hover:bg-gold hover:text-black transition-all duration-200 shadow-lg">
+            <button className="border border-byzantine text-byzantine px-14 py-3 rounded-full hover:bg-byzantine hover:text-black transition-all duration-200 shadow-lg">
                 <div className="flex">
                     <div className="w-10">
                         <ChatIcon 

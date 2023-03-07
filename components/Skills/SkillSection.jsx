@@ -11,7 +11,7 @@ const SkillSection = ({
     <div className="py-20 px-5 lg:py-16 lg:px-8">
 
         <div className="flex justify-center mb-6">
-            <div className="relative w-20 h-20 border border-gold rounded-full bg-purplenight">
+            <div className="relative w-20 h-20 border border-gold rounded-full bg-byzantine">
                 {icon}
             </div>
         </div>
@@ -20,14 +20,14 @@ const SkillSection = ({
         <p className="mb-16 lg:mb-10 text-lg text-ivory">{summary}</p>
 
         <div className="mb-14 lg:mb-10">
-            <h3 className="mb-2 text-purplenight">{specificsTitle}</h3>
+            <h3 className="mb-2 text-byzantine">{specificsTitle}</h3>
             <p className="text-ivory">
                 {specificsList}
             </p>
         </div>
 
         <div>
-            <h3 className="mb-2 text-purplenight">{toolsTitle}</h3>
+            <h3 className="mb-2 text-byzantine">{toolsTitle}</h3>
             <ul className="text-ivory">
                 {tools.map((tool, i) => (<li key={i} className="mb-1">{tool}</li>))}
             </ul>

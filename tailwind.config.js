@@ -23,7 +23,7 @@ module.exports = {
           300: '#0b525b',
           400: '#144552'
         },
-        purplenight: {
+        byzantine: {
           light: '#4864d5',
           DEFAULT: '#3454d1',
           dark: '#263fa6',

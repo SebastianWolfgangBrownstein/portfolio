@@ -12,9 +12,9 @@ export const Footer = () => {
                 <p className="text-xl text-tan">Living, learning, & leveling up one day at a time.</p>
             </div>
             <div className="flex space-x-5 mb-16">
-                <div className="w-12 h-12 border-2 border-purplenight rounded-full"></div>
-                <div className="w-12 h-12 border-2 border-purplenight rounded-full"></div>
-                <div className="w-12 h-12 border-2 border-purplenight rounded-full"></div>
+                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
+                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
+                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
             </div>
             <div className="">
                 <span className="text-sm text-tan">Made by me &copy; 2023</span>

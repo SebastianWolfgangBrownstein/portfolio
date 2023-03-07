@@ -3,7 +3,7 @@ import Project from "./Project";
 const MyWork = () => {
   return (
     // <section className="w-full text-center px-6 pt-20 pb-20 lg:px-72 lg:pt-10 lg:pb-44" style={{backgroundImage: "radial-gradient(circle at right, #870000, #190a05, #190a05);"}}>
-    <section className="bg-purplenight-darkest w-full text-center px-6 pt-20 pb-20 lg:px-72 lg:pt-28 lg:pb-44">
+    <section className="bg-byzantine-darkest w-full text-center px-6 pt-20 pb-20 lg:px-72 lg:pt-28 lg:pb-44">
         <h2 className="text-3xl font-play text-gold mb-10">My Recent Work</h2>
         <ul>
             <Project 
