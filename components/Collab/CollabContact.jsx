@@ -1,22 +1,25 @@
 import { useState } from "react";
 import Header from "../Layout/Header";
-import ContactActions from './ContactActions';
+import ContactActions from "../Contact/ContactActions";
 
-
-const Contact = () => {
+const CollabContact = () => {
     const [submitted, setSubmitted] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        projectName: '',
+        position: '',
         message: ''
     })
 
-    const { name, email, message } = formData;
+    const { name, email, projectName, position, message } = formData;
 
     const onReset = () => {
         setFormData({
             name: '',
             email: '',
+            projectName: '',
+            position: '',
             message: ''
         });
         setSubmitted(false);
@@ -26,9 +29,9 @@ const Contact = () => {
         e.preventDefault();
 
         console.log('Sending...')
-        console.log('Form Data:', formData)
+        // console.log('Form Data:', formData)
 
-        fetch('/api/contact', {
+        fetch('/api/collab', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -43,6 +46,8 @@ const Contact = () => {
                 setFormData({
                     name: '',
                     email: '',
+                    projectName: '',
+                    position: '',
                     message: ''
                 })
             }
@@ -64,10 +69,10 @@ const Contact = () => {
 
                     <p className="text-2xl text-tan"> I will do my best to get back to you within 24 hours.</p>
                 </section>
-            ):(
-                <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-40" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
-                    <h1 className="text-4xl text-gold font-play mb-12">Let&apos;s chat, <br/>I&apos;m here to help. </h1>
-                    <form 
+            ) : (
+                <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-32" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
+                    <h1 className="text-4xl text-gold font-play mb-12">Interested in working together? <br/> Let&apos;s make it happen.</h1>
+                    <form
                         onSubmit={e => onSubmit(e)}
                         className="grid grid-cols-6 gap-x-8 gap-y-6 px-5"
                     >
@@ -89,8 +94,26 @@ const Contact = () => {
                             />
                         </div>
 
+                        <div className="col-span-3 text-left">
+                            <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="projectName">Company/Project Name</label>
+                            <input type="text" name="projectName" id="projectName" 
+                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                value={projectName}
+                                onChange={onChange}
+                            />
+                        </div>
+
+                        <div className="col-span-3 text-left">
+                            <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="position">Position you&apos;re hiring</label>
+                            <input type="text" name="position" id="position" 
+                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                value={position}
+                                onChange={onChange}
+                            />
+                        </div>
+
                         <div className="col-span-6 text-left">
-                            <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="message">Message</label>
+                            <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="message">Additional details</label>
                             <textarea 
                                 id="message" name="message" cols="80" rows="8" spellCheck="false"
                                 className="bg-gunmetal-lighter form-textarea rounded text-xl tracking-wide px-4 py-6 text-gold-100" 
@@ -99,7 +122,6 @@ const Contact = () => {
                                 onChange={onChange}
                             />
                         </div>
-                        
                         <div className="col-start-3 col-end-5 mt-7">
                             <button 
                                 type="submit"
@@ -107,10 +129,12 @@ const Contact = () => {
                             >Submit</button>
                         </div>
                     </form>
+                
                 </section>
             )}
+            
         </>
     )
 }
 
-export default Contact;
+export default CollabContact;
