@@ -9,7 +9,7 @@ const MyStartups = () => {
             <p className="text-lg text-tan lg:text-xl">My love for entrepenuership started young. After some friends and I discovered a grove of mango trees in the forest, I would climb the trees and knock down fruit for the others to gather. Then we would hold up a sign and sell them on the side of the road for half the price of the super market. Since then, my entrepenurial passion has evolved into creating digital products and experiences that sell. Today I&apos;m battle tested in taking an idea from vision to production.</p>
         </div>
         
-        <div className="grid md:grid-cols-2 justify-items-start space-y-11 md:space-y-1 md:space-x-1 xl:space-y-0 xl:space-x-6 xl:grid-cols-4 px-6 xl:px-60">
+        <div className="grid md:grid-cols-2 justify-items-start space-y-11 md:space-y-2 md:space-x-2 xl:space-y-0 xl:space-x-6 xl:grid-cols-4 px-6 xl:px-60">
             <Startup 
                 name="SXD"
                 logoPath="/images/SXDLogo.png"
