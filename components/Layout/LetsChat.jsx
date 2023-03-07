@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const LetsChat = () => {
 
@@ -12,7 +13,12 @@ const LetsChat = () => {
             </div>
             
             <div className="grow px-3 w-full">
-                <button className="text-lg text-gold bg-overlay-600 border border-gold px-12 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg">Let&apos;s do this</button>
+                <Link href="/collaborate">
+                    <button className="text-lg text-gold bg-overlay-600 border border-gold px-12 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg">
+                        Let&apos;s do this
+                    </button>
+                </Link>
+                
             </div>
         </div>
     )
