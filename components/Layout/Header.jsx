@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
-
-export const Header = () => {
+export const Header = ({
+    links
+}) => {
     return (
         <header className="absolute top-0 z-10 flex w-full items-center justify-between py-5 px-10 lg:py-10 lg:px-60">
             <Link href="/">
@@ -11,6 +12,7 @@ export const Header = () => {
                     </span>
                 </div>
             </Link>
+            {links ? links : <></>}
         </header>
     );
 };

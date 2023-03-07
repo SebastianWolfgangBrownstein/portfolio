@@ -1,3 +1,5 @@
+import Header from './Layout/Header'
+import SayHello from './Layout/SayHello';
 import Hero from "./Hero/Hero";
 import About from './About/About';
 import Skills from './Skills/Skills';
@@ -9,6 +11,7 @@ import Footer from './Layout/Footer'
 export const HomePage = () => {
     return (
         <div>
+            <Header links={<SayHello />}/>
             <Hero />
             <About />
             <Skills />

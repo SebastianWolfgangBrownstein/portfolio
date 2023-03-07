@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Header from "../Layout/Header";
+import ContactActions from './ContactActions';
 
 
 const Contact = () => {
@@ -10,6 +12,15 @@ const Contact = () => {
     })
 
     const { name, email, message } = formData;
+
+    const onReset = () => {
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+        setSubmitted(false);
+    }
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -44,6 +55,9 @@ const Contact = () => {
 
     return (
         <>
+            <Header 
+                links={<ContactActions onReset={onReset}/>}
+            />
             {submitted ? (
                 <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-56">
                     <h2 className="text-4xl text-gold font-play mb-10">Thanks for taking the time to reach out!<br/>Your message has arrived in my inbox.</h2>
@@ -51,7 +65,7 @@ const Contact = () => {
                     <p className="text-2xl text-tan"> I will do my best to get back to you within 24 hours.</p>
                 </section>
             ):(
-                <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-40">
+                <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-40" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
                     <h1 className="text-4xl text-gold font-play mb-10">Thanks for taking the time to reach out!</h1>
                     <form 
                         onSubmit={e => onSubmit(e)}
@@ -87,7 +101,10 @@ const Contact = () => {
                         </div>
                         
                         <div className="col-start-3 col-end-5 mt-7">
-                            <button className="text-lg text-gold bg-overlay-600 border border-gold px-16 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg">Submit</button>
+                            <button 
+                                type="submit"
+                                className="text-lg text-gold bg-overlay-600 border border-gold px-20 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg"
+                            >Submit</button>
                         </div>
                     </form>
                 </section>
