@@ -8,10 +8,10 @@ const Testimonial = ({
 }) => {
 
     return (
-        <div className="mb-10 py-16 border border-gold rounded-2xl bg-gunmetal">
+        <div className="mb-10 py-16 rounded-2xl">
             <div className="flex justify-center w-full mb-10">
-                <div className="">
-                    <Image src={imagePath} alt={author} width={100} height={80}/>
+                <div className="w-28 h-28 rounded-full overflow-hidden">
+                    <Image src={imagePath} alt={author} width={100} height={80} quality={100}/>
                 </div>
             </div>
             <div className="px-1 xl:px-28 mb-10">
