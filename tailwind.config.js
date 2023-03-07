@@ -23,7 +23,13 @@ module.exports = {
           300: '#0b525b',
           400: '#144552'
         },
-        purplenight: '#3454d1', // '#6153cc' // #6d72c3 // #4e4187
+        purplenight: {
+          light: '#4864d5',
+          DEFAULT: '#3454d1',
+          dark: '#263fa6',
+          darker:'#1e3385',
+          darkest: '#172664'
+        }, // '#6153cc' // #6d72c3 // #4e4187
         gunmetal: '#0f1314',
         brightgreen: '#61e786',
         pink: '',
