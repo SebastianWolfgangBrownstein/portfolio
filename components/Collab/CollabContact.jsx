@@ -82,6 +82,7 @@ const CollabContact = () => {
                                 className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={name}
                                 onChange={onChange}
+                                required
                             />
                         </div>
 
@@ -91,6 +92,7 @@ const CollabContact = () => {
                                 className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={email}
                                 onChange={onChange}
+                                required
                             />
                         </div>
 
