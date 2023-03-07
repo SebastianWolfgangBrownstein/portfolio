@@ -1,3 +1,9 @@
+import {
+    GithubIcon,
+    LinkedinIcon,
+    EnvelopeIcon
+} from '@sebthedev/swanky-icons'
+
 import LetsChat from "./LetsChat";
 
 export const Footer = () => {
@@ -12,9 +18,33 @@ export const Footer = () => {
                 <p className="text-xl text-tan">Living, learning, & leveling up one day at a time.</p>
             </div>
             <div className="flex space-x-5 mb-16">
-                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
-                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
-                <div className="w-12 h-12 border-2 border-byzantine rounded-full"></div>
+                <a href="https://www.linkedin.com/in/swolfgangb/" rel="noreferrer noopener" target="_blank">
+                    <div className="flex justify-center items-center w-12 h-12 border-2 bg-byzantine border-byzantine rounded-full">
+                        <LinkedinIcon 
+                            width={28}
+                            height={28}
+                            fillColor='#0f1314'
+                        />
+                    </div>
+                </a>
+                <a href="https://github.com/SebastianWolfgangBrownstein" rel="noreferrer noopener" target="_blank">
+                    <div className="flex justify-center items-center w-12 h-12  bg-gunmetal border-byzantine rounded-full">
+                            <GithubIcon 
+                                width={50}
+                                height={50}
+                                fillColor="#3454d1"
+                            />
+                    </div>
+                </a>
+                <a href="mailto:sbrownstein.dev@gmail.com">
+                    <div className="flex justify-center items-center pb-1 w-12 h-12 border-2 border-byzantine bg-byzantine rounded-full">
+                        <EnvelopeIcon 
+                            width={27}
+                            height={27}
+                            fillColor='#0f1314'
+                        />
+                    </div>
+                </a>
             </div>
             <div className="">
                 <span className="text-sm text-tan">Made by me &copy; 2023</span>
