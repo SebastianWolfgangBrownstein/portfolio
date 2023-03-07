@@ -7,35 +7,47 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        oxfordblue: '#05062D',
-        grayblue: '#0e1b33',
-        lightgray: '#c0e8f9', //#ccd6f6
-        darkgray: '#5e5e5e',
-        ivory: '#f6f7eb',
-        burgundy: '#851e2e',
-        amethyst: '#8367c7',
-        redlight: '#96031a',//'#d81e5b', //#a10702 //#96031a //#590004 
         blood: '#870000',
         licorice: '#190a05',
-        midnight: {
-          100: '#006466',
-          200: '#065a60',
-          300: '#0b525b',
-          400: '#144552'
-        },
         byzantine: {
           light: '#4864d5',
           DEFAULT: '#3454d1',
           dark: '#263fa6',
           darker:'#1e3385',
           darkest: '#172664'
-        }, // '#6153cc' // #6d72c3 // #4e4187
-        gunmetal: '#0f1314',
-        brightgreen: '#61e786',
-        pink: '',
-        gold: '#d6ad30', //#ae9036 //#c5a544 //#caad53
-        tan: '#dbd3ad', //'#cbac88'
-        fireorange: '#f3752b',
+        }, 
+        gunmetal: {
+          lightest: '#607a80',
+          lighter: '#2c373a',
+          light: '#1a2123',
+          DEFAULT: '#0f1314',
+          dark: '#090b0c'
+        },
+        gold: {
+          25: '#e1c266',
+          50: '#ddbb55',
+          75: '#dab444',
+          DEFAULT: '#d6ad30',
+          100: '#cca328',
+          200: '#bb9625',
+          300: '#aa8822',
+          400: '#997b1e',
+          500: '#886d1b'
+        }, 
+        tan: {
+          50: '#ece8d4',
+          75: '#e6e1c6',
+          DEFAULT: '#dbd3ad',
+          100: '#dad2aa',
+          150: '#d3ca9c',
+          200: '#cdc38e',
+          250: '#c7bb7f',
+          300: '#c1b471',
+          350: '#bbac63',
+          400: '#b4a455',
+          450: '#aa9a4b',
+          500: '#9c8d44'
+        }, 
         overlay: {
           100: 'rgba(0, 0, 0, 0.1)',
           200: 'rgba(0, 0, 0, 0.2)',
@@ -44,8 +56,7 @@ module.exports = {
           500: 'rgba(0, 0, 0, 0.5)',
           600: 'rgba(0, 0, 0, 0.6)',
           700: 'rgba(0, 0, 0, 0.7)',
-        },
-        mint: '#affcaf', //#bfd7b5
+        }, 
         nextjs: '#ffffff',
         typescript: '#007acc',
         python: '#ffd141',
