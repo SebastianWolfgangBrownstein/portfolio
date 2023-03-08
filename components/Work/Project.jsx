@@ -16,8 +16,8 @@ const Project = ({
             </div>
             <div className="col-start-1 col-end-13 lg:col-start-7 lg:col-end-[-1] row-start-1 row-end-[-1] z-10 pt-7 pointer-events-none">
                 <div className="text-left lg:text-right pl-4 lg:pl-0">
-                    <p className="text-sm text-tan my-1 lg:my-2.5">Featured Project</p>
-                    <h3 className="font-play text-gold text-3xl mb-2 lg:mb-5">{name}</h3>
+                    <small className="block text-sm text-tan my-1 lg:my-2.5">Featured Project</small>
+                    <h2 className="font-play text-gold text-3xl mb-2 lg:mb-5">{name}</h2>
                 </div>
                 <div className="text-left lg:text-right lg:bg-gunmetal p-6 mb-5 rounded-md lg:shadow-md">
                     <p className="text-tan">{description}</p>

@@ -15,7 +15,7 @@ export const Footer = () => {
             
             <Link href="/">
                 <div className="mt-32 mb-10">
-                    <h1 className="text-6xl font-genos text-gold">SEB</h1>
+                    <span className="text-6xl font-genos text-gold">SEB</span>
                 </div>
             </Link>
             

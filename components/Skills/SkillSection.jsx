@@ -16,7 +16,7 @@ const SkillSection = ({
             </div>
         </div>
         
-        <h2 className="text-2xl font-play mb-7 lg:mb-5 text-gold">{title}</h2>
+        <h1 className="text-2xl font-play mb-7 lg:mb-5 text-gold">{title}</h1>
         <p className="mb-16 lg:mb-10 text-lg text-tan-150">{summary}</p>
 
         <div className="mb-14 lg:mb-10">
