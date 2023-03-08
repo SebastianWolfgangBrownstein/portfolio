@@ -25,7 +25,6 @@ const HeroShot = () => {
                 <div className={glitching ? classes.glitchLayers : classes.glitchHidden}>
                     <div className={classes.glitchLayer}></div>
                     <div className={classes.glitchLayer}></div>
-                    <div className={classes.glitchLayer}></div>
                 </div>
             </div>
         </div>
@@ -33,7 +32,3 @@ const HeroShot = () => {
 }
 
 export default HeroShot;
-
-{/* <div className="z-10 flex justify-center mb-5">
-            <Image className="sepia z-10 ml-8" src="/images/TorsoShot.png" width={350} height={800} quality={100} priority={true} alt="Seb"/>
-        </div> */}
