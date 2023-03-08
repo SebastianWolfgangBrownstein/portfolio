@@ -70,45 +70,45 @@ const CollabContact = () => {
                     <p className="text-2xl text-tan"> I will do my best to get back to you within 24 hours.</p>
                 </section>
             ) : (
-                <section className="bg-gunmetal-light flex flex-col items-center w-full h-screen text-center pt-32" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
-                    <h1 className="text-4xl text-gold font-play mb-12">Interested in working together? <br/> Let&apos;s make it happen.</h1>
+                <section className="bg-gunmetal-dark flex flex-col items-center w-full text-center pt-32 pb-40">
+                    <h1 className="text-2xl md:text-4xl text-gold font-play mb-12">Interested in working together? <br/> Let&apos;s make it happen.</h1>
                     <form
                         onSubmit={e => onSubmit(e)}
                         className="grid grid-cols-6 gap-x-8 gap-y-6 px-5"
                     >
-                        <div className="col-span-3 text-left">
+                        <div className="col-span-6 md:col-span-3 text-left">
                             <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="name">Name</label>
                             <input type="text" name="name" id="name" 
-                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                className="bg-gunmetal-light w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={name}
                                 onChange={onChange}
                                 required
                             />
                         </div>
 
-                        <div className="col-span-3 text-left">
+                        <div className="col-span-6 md:col-span-3 text-left">
                             <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="email">Email</label>
                             <input type="email" name="email" id="email" 
-                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                className="bg-gunmetal-light w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={email}
                                 onChange={onChange}
                                 required
                             />
                         </div>
 
-                        <div className="col-span-3 text-left">
+                        <div className="col-span-6 md:col-span-3 text-left">
                             <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="projectName">Company/Project Name</label>
                             <input type="text" name="projectName" id="projectName" 
-                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                className="bg-gunmetal-light w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={projectName}
                                 onChange={onChange}
                             />
                         </div>
 
-                        <div className="col-span-3 text-left">
+                        <div className="col-span-6 md:col-span-3 text-left">
                             <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="position">Position you&apos;re hiring</label>
                             <input type="text" name="position" id="position" 
-                                className="bg-gunmetal-lighter w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
+                                className="bg-gunmetal-light w-full text-xl tracking-wide h-14 rounded px-4 text-gold-100"
                                 value={position}
                                 onChange={onChange}
                             />
@@ -118,16 +118,16 @@ const CollabContact = () => {
                             <label className="text-lg font-play block mb-3 text-tan-300" htmlFor="message">Additional details</label>
                             <textarea 
                                 id="message" name="message" cols="80" rows="8" spellCheck="false"
-                                className="bg-gunmetal-lighter form-textarea rounded text-xl tracking-wide px-4 py-6 text-gold-100" 
+                                className="bg-gunmetal-light form-textarea rounded text-xl tracking-wide px-4 py-6 text-gold-100" 
                                 style={{maxWidth: '100%', minHeight: '6rem'}}
                                 value={message}
                                 onChange={onChange}
                             />
                         </div>
-                        <div className="col-start-3 col-end-5 mt-7">
+                        <div className="col-span-6 lg:col-start-3 lg:col-end-5 mt-7">
                             <button 
                                 type="submit"
-                                className="text-lg text-gold bg-overlay-600 border border-gold px-20 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg"
+                                className="text-lg text-gold bg-overlay-600 border border-gold px-24 lg:px-20 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg"
                             >Submit</button>
                         </div>
                     </form>

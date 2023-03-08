@@ -65,7 +65,7 @@ const Contact = () => {
                     <p className="text-2xl text-tan"> I will do my best to get back to you within 24 hours.</p>
                 </section>
             ):(
-                <section className="bg-gunmetal-dark flex flex-col items-center w-full  text-center pt-40 pb-40">
+                <section className="bg-gunmetal-dark flex flex-col items-center w-full text-center pt-40 pb-40">
                     <h1 className="text-4xl text-gold font-play mb-12">Let&apos;s chat, <br/>I&apos;m here to help. </h1>
                     <form 
                         onSubmit={e => onSubmit(e)}
@@ -105,7 +105,7 @@ const Contact = () => {
                         <div className="col-span-6 lg:col-start-3 lg:col-end-5 mt-7">
                             <button 
                                 type="submit"
-                                className="text-lg text-gold bg-overlay-600 border border-gold px-44 lg:px-20 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg"
+                                className="text-lg text-gold bg-overlay-600 border border-gold px-24 lg:px-20 py-3 rounded-full transition-all duration-200 hover:bg-gold hover:text-black shadow-lg"
                             >Submit</button>
                         </div>
                     </form>

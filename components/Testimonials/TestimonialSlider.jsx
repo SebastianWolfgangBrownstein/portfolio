@@ -20,7 +20,7 @@ const TestimonialSlider = () => {
             <Testimonial 
                 author="Milosh Spasik"
                 authorTitle="Frontend Developer & UI/UX Designer, ChainStarters"
-                quote="Sebastian is a highly professional, strategic, engaged, hard working senior web & app developer. I owe him a huge THANK YOU for showing me and teaching me the first steps in development and coding. He is a greate teacher with a huge patience tolerance. Thank you!"
+                quote="Sebastian is a highly professional, strategic, engaged, hard working senior web & app developer. I owe him a huge THANK YOU for showing me and teaching me the first steps in development and coding. He is a great teacher with a huge patience tolerance. Thank you!"
                 imagePath="/images/milosh_profile.jpg"
             />
         </Carousel>
