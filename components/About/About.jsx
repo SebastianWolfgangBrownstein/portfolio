@@ -1,8 +1,10 @@
-
+import Navigation from "../Navigation/Navigation"
 
 const About = () => {
   return (
-    <section className="flex flex-col justify-center w-full h-300 2xl:h-200 bg-gunmetal-dark text-center px-8 py-40 lg:px-36 xl:px-96 2xl:px-100 2xl:py-36">
+    <section id="about" className="relative flex flex-col justify-center w-full h-300 2xl:h-200 bg-gunmetal-dark text-center px-8 py-40 lg:px-36 xl:px-96 2xl:px-100 2xl:py-36">
+        <Navigation />
+
         <h2 className="text-3xl lg:text-4xl text-gold font-play mb-10 lg:mb-3">Hey, I&apos;m Seb. Nice to meet you.</h2>
         <p className="text-tan text-md sm:text-lg lg:text-xl 2xl:mb-10">
             I started my journey as a developer over 7 years ago. After studying Aerospace Engineering 

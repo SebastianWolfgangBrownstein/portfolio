@@ -10,7 +10,7 @@ import LetsChat from "./LetsChat";
 
 export const Footer = () => {
     return (
-        <footer className="flex flex-col items-center w-full text-center pb-28" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
+        <footer id="contact" className="flex flex-col items-center w-full text-center pb-28" style={{backgroundImage: "radial-gradient(circle at center, #870000, #190a05, #190a05)"}}>
             <LetsChat />
             
             <Link href="/">
