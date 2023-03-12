@@ -10,18 +10,22 @@ const NavItem = ({
     index,
     isActive,
     label,
+    linkId,
     onClick
 }) => {
     const handleClick = () => onClick(index);
 
     return (
-        <li 
-            className={cx({
-                navItem: true,
-                active: index === isActive ? true : false
-            })}
-            onClick={() => handleClick()}
-        >{label}</li>
+        <a href={`#${linkId}`}>
+            <li 
+                className={cx({
+                    navItem: true,
+                    active: index === isActive ? true : false
+                })}
+                onClick={() => handleClick()}
+            >{label}</li>
+        </a>
+        
     )
     
 }
