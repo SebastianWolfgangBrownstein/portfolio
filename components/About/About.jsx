@@ -1,9 +1,12 @@
-import Navigation from "../Navigation/Navigation"
+import DesktopNavigation from "../Navigation/DesktopNavigation"
+import useMediaQuery from "../../hooks/useMediaQuery"
 
 const About = () => {
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
+
   return (
     <section id="about" className="relative flex flex-col justify-center w-full h-300 2xl:h-200 bg-gunmetal-dark text-center px-8 py-40 lg:px-36 xl:px-96 2xl:px-100 2xl:py-36">
-        <Navigation />
+        {isDesktop ? <DesktopNavigation /> : <></> }
 
         <h2 className="text-3xl lg:text-4xl text-gold font-play mb-10 lg:mb-3">Hey, I&apos;m Seb. Nice to meet you.</h2>
         <p className="text-tan text-md sm:text-lg lg:text-xl 2xl:mb-10">

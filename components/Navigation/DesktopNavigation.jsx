@@ -6,7 +6,7 @@ import NavItem from './NavItem';
 import useScrollPosition from '../../hooks/useScrollPosition';
 
 
-const Navigation = () => {
+const DesktopNavigation = () => {
     gsap.registerPlugin(ScrollTrigger)
     const navRef = useRef(null);
     // const [isSticky, setIsSticky] = useState(false);
@@ -184,4 +184,4 @@ const Navigation = () => {
     )
 }
 
-export default Navigation;
+export default DesktopNavigation;
