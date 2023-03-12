@@ -5,12 +5,7 @@ import NavItem from './NavItem';
 
 
 const Navigation = () => {
-
     const [active, setActive] = useState(0)
-
-    useEffect(() => {
-        console.log(active)
-    }, [active])
 
     const [lbNodes, setLbNodes] = useState([]);
 
@@ -20,7 +15,7 @@ const Navigation = () => {
 
         gsap.to(lbs[0], {
             duration: 0.6,
-            y: -43,
+            y: -40,
             ease: "bounce.out",
             delay: 1
         })
@@ -42,7 +37,7 @@ const Navigation = () => {
         setActive(index)
 		gsap.to(lbNodes[index], {
                     duration: 0.5,
-					y: -43,
+					y: -40,
 					ease: "bounce.out"
 				});
     }
