@@ -9,7 +9,7 @@ import useScrollPosition from '../../hooks/useScrollPosition';
 const Navigation = () => {
     gsap.registerPlugin(ScrollTrigger)
     const navRef = useRef(null);
-    const [isSticky, setIsSticky] = useState(false);
+    // const [isSticky, setIsSticky] = useState(false);
     const [active, setActive] = useState(0);
     const [lbNodes, setLbNodes] = useState([]);
 
@@ -31,25 +31,25 @@ const Navigation = () => {
     useEffect(() => {
         const showNav = gsap.fromTo(navRef.current, {
             opacity: 0,
+            yPercent: -100
         },
         {
             opacity: 1,
-            duration: 0.5,
+            yPercent: 0,
+            duration: 0.3,
             paused: true
         }
         ).progress(1)
 
         ScrollTrigger.create({
-            trigger: document.querySelector('#about'),
-            start: 1000,
+            trigger: document.querySelector('#skills'),
+            start: "top 30%",
             end: 99999,
             onUpdate: (self) => {
-                if (isSticky) {
-                    self.direction === -1 ? showNav.play() : showNav.reverse()
-                }
+               self.direction === -1 ? showNav.play() : showNav.reverse()
             }
         });
-    }, [isSticky])
+    }, [])
 
     function pushDownLb() {
         for(let k = 0; k < lbNodes.length; ++k) {
@@ -80,12 +80,16 @@ const Navigation = () => {
             testimonials: 4418,
             contact: 5300
         };
+        
 
-        // Toggle nav sticky behavior after about section
-        if (!isSticky && scrollPosition >= sectionTops.about) {
-            setIsSticky(true);
-        } else if (isSticky && scrollPosition < sectionTops.about) {
-            setIsSticky(false);
+        if (scrollPosition >= sectionTops.about) {
+            gsap.set(navRef.current, {
+                position: 'fixed'
+            })
+        } else if (scrollPosition < sectionTops.about) {
+            gsap.set(navRef.current, {
+                position: 'absolute'
+            })
         }
 
         function pushDown() {
@@ -126,10 +130,10 @@ const Navigation = () => {
             setActive(4);
             popUp(4);
         }
-    }, [isSticky, scrollPosition, active, lbNodes])
+    }, [scrollPosition, active, lbNodes])
 
     return (
-        <section ref={navRef} className={classes.header} style={isSticky ? {position: 'fixed'}:{}}>
+        <section ref={navRef} className={classes.header} >
             <nav className={classes.menu}>
                 <ul>
                     <NavItem 
