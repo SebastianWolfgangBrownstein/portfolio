@@ -14,8 +14,20 @@ const Testimonial = ({
                     <Image src={imagePath} alt={`Photo of ${author}`} width={100} height={80} quality={100}/>
                 </div>
             </div>
-            <div className="px-1 xl:px-28 mb-10">
-                <p className="leading-8 xl:leading-7 tracking-wide text-lg text-tan">&quot;{quote}&quot;</p>
+            <div className="
+                px-1 mb-10
+                sm:px-5
+                md:px-32
+                lg:px-44
+                xl:px-80
+                2xl:px-96">
+                <p className="
+                    tracking-wide text-lg text-tan
+                    xs:leading-loose
+                    sm:text-xl sm:leading-loose
+                    lg:text-2xl lg:leading-relaxed
+                    xl:leading-relaxed
+                ">&quot;{quote}&quot;</p>
             </div>
             <div className="">
                 <h3 className="mb-1 text-lg font-bold text-gold">{author}</h3>
