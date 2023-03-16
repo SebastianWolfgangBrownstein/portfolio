@@ -5,18 +5,56 @@ const About = () => {
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
   return (
-    <section id="about" className="relative flex flex-col justify-center w-full h-300 2xl:h-200 bg-gunmetal-dark text-center px-8 py-40 lg:px-36 xl:px-96 2xl:px-100 2xl:py-36">
+    <section id="about" className="
+      bg-gunmetal-dark text-center
+      relative flex flex-col justify-center 
+      w-full px-8 py-40  
+      sm:px-14
+      lg:px-36 lg:py-60 lg:pb-72
+      xl:px-60 xl:pb-72
+      2xl:px-96 2xl:py-40 2xl:pb-56"
+    >
         {isDesktop ? <DesktopNavigation /> : <></> }
 
-        <h2 className="text-3xl lg:text-4xl text-gold font-play mb-10 lg:mb-3">Hey, I&apos;m Seb. Nice to meet you.</h2>
-        <p className="text-tan text-md sm:text-lg lg:text-xl 2xl:mb-10">
-            I started my journey as a developer over 7 years ago. After studying Aerospace Engineering 
-            in college with Computer Science as a minor, I decided that I&apos;d 
-            have a more tangible and immediate impact on the world by pursuing software as a career. Since then, I&apos;ve 
-            founded 4 tech startups and worked on countless independent projects. I&apos;m a curious thinker, lighthearted adventurer & enthusiastic teacher who is always seeking creative ways 
-            to push the limits.
+        <h2 className="
+          text-3xl text-gold font-play mb-10
+          lg:text-4xl lg:mb-8
+          xl:mb-8
+          2xl:mb-10"
+        >Hey, I&apos;m Seb. Nice to meet you.</h2>
+
+        <p className="
+          text-tan text-md tracking-wide mb-10
+          sm:text-lg
+          lg:text-xl
+          xl:mb-5
+          2xl:leading-relaxed 2xl:mb-7">
+          I&apos;m a creative technologist with over 7 years of entrepreneurial full-stack development experience.
+            
         </p>
-        
+        <p className="
+          text-tan text-md tracking-wide mb-10
+          sm:text-lg
+          lg:text-xl
+          xl:mb-5
+          2xl:leading-relaxed 2xl:mb-7">
+        After studying Aerospace Engineering in college with Computer Science as my minor, I decided that I&apos;d 
+          have a more tangible and immediate impact on the world by pursuing software as a career. So, one year short of graduation, 
+          I dropped out to work on a startup full-time. Since then, I&apos;ve 
+          founded 4 tech startups and worked on countless independent projects.
+        </p>
+        <p className="
+          text-tan text-md tracking-wide 
+          sm:text-lg
+          lg:text-xl
+          2xl:leading-relaxed 2xl:mb-10">
+        I&apos;m a curious thinker, lighthearted adventurer & enthusiastic 
+          mentor. In my spare time you&apos;ll find me learning new skills, building 
+          custom motorcycles & curating fine art for my local gallery.
+        </p>
+        {/* <p className="text-tan text-md sm:text-lg lg:text-xl 2xl:mb-10">
+          
+        </p> */}
     </section>
   )
 }
