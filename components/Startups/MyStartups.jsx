@@ -15,6 +15,7 @@ const MyStartups = () => {
             <h1 className="text-3xl font-play text-gold mb-5 lg:mb-10">My Startups</h1>
             <p className="
               text-tan text-md tracking-wide leading-relaxed
+                xs:text-lg xs:leading-relaxed
                 sm:text-lg sm:leading-loose  
                 lg:text-xl lg:leading-relaxed
             ">My love for entrepenuership started young. After some friends and I discovered a grove of mango trees in the forest, I would climb the trees and knock down fruit for the others to gather. Then we would hold up a sign and sell them on the side of the road for half the price of the super market. Since then, my entrepenurial passion has evolved into creating digital products and experiences that sell. Today I&apos;m battle tested in taking ideas from vision to production.</p>
