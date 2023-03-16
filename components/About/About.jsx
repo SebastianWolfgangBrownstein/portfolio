@@ -24,31 +24,32 @@ const About = () => {
         >Hey, I&apos;m Seb. Nice to meet you.</h2>
 
         <p className="
-          text-tan text-md tracking-wide mb-10
-          sm:text-lg
-          lg:text-xl
-          xl:mb-5
+          text-tan text-md tracking-wide mb-10 leading-loose
+          sm:text-lg sm:leading-loose
+          lg:text-xl lg:leading-relaxed
+          xl:mb-10 xl:leading-relaxed
           2xl:leading-relaxed 2xl:mb-7">
           I&apos;m a creative technologist with over 7 years of entrepreneurial full-stack development experience.
             
         </p>
         <p className="
-          text-tan text-md tracking-wide mb-10
-          sm:text-lg
-          lg:text-xl
-          xl:mb-5
+          text-tan text-md tracking-wide mb-10 leading-loose
+          sm:text-lg sm:leading-loose
+          lg:text-xl lg:leading-relaxed
+          xl:mb-10 xl:leading-relaxed
           2xl:leading-relaxed 2xl:mb-7">
-        After studying Aerospace Engineering in college with Computer Science as my minor, I decided that I&apos;d 
+          After studying Aerospace Engineering in college with Computer Science as my minor, I decided that I&apos;d 
           have a more tangible and immediate impact on the world by pursuing software as a career. So, one year short of graduation, 
           I dropped out to work on a startup full-time. Since then, I&apos;ve 
           founded 4 tech startups and worked on countless independent projects.
         </p>
         <p className="
-          text-tan text-md tracking-wide 
-          sm:text-lg
-          lg:text-xl
-          2xl:leading-relaxed 2xl:mb-10">
-        I&apos;m a curious thinker, lighthearted adventurer & enthusiastic 
+          text-tan text-md tracking-wide leading-loose
+          sm:text-lg sm:leading-loose
+          lg:text-xl lg:leading-relaxed
+          xl:leading-relaxed 
+          2xl:mb-10">
+          I&apos;m a curious thinker, lighthearted adventurer & enthusiastic 
           mentor. In my spare time you&apos;ll find me learning new skills, building 
           custom motorcycles & curating fine art for my local gallery.
         </p>
