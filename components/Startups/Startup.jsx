@@ -16,7 +16,7 @@ const Startup = ({
             md:grid-rows-2 md:gap-y-10 md:pt-8 md:pb-8 
             lg:gap-y-10 lg:pb-0
             xl:grid-rows-3 xl:gap-y-0 xl:pb-4 xl:pt-2 
-            2xl:grid-rows-2 2xl:pb-8
+            2xl:grid-rows-2 2xl:pb-3 2xl:px-4
         ">
             <div className="
                 grid grid-cols-5 w-full mb-2 
@@ -34,6 +34,7 @@ const Startup = ({
                 text-tan text-lg italic
                 xs:text-xl
                 sm:text-2xl sm:px-5
+                2xl:text-xl 2xl:px-0
             ">{summary}</p>
         </div>
     )

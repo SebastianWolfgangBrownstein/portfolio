@@ -13,18 +13,16 @@ const MyStartups = () => {
             2xl:px-96 xl:mb-14"
         >
             <h1 className="text-3xl font-play text-gold mb-5 lg:mb-10">My Startups</h1>
-            <p className="text-lg text-tan lg:text-xl">My love for entrepenuership started young. After some friends and I discovered a grove of mango trees in the forest, I would climb the trees and knock down fruit for the others to gather. Then we would hold up a sign and sell them on the side of the road for half the price of the super market. Since then, my entrepenurial passion has evolved into creating digital products and experiences that sell. Today I&apos;m battle tested in taking ideas from vision to production.</p>
+            <p className="
+              text-tan text-md tracking-wide leading-relaxed
+                sm:text-lg sm:leading-loose  
+                lg:text-xl lg:leading-relaxed
+            ">My love for entrepenuership started young. After some friends and I discovered a grove of mango trees in the forest, I would climb the trees and knock down fruit for the others to gather. Then we would hold up a sign and sell them on the side of the road for half the price of the super market. Since then, my entrepenurial passion has evolved into creating digital products and experiences that sell. Today I&apos;m battle tested in taking ideas from vision to production.</p>
         </div>
         
-        {/* <div className="
-            grid justify-items-start space-y-11 px-6
-            md:grid-cols-2 md:space-y-2 md:space-x-2 
-            xl:space-y-0 xl:space-x-6 xl:grid-cols-4 xl:px-20
-            "
-        > */}
         <div className="
             grid justify-items-start px-6 gap-y-10
-            md:grid-cols-2 md:grid-rows-2 md:gap-4
+            md:grid-cols-2 md:gap-4
             lg:gap-8
             xl:gap-8
             2xl:gap-y-0 2xl:gap-x-6 2xl:grid-cols-4 2xl:px-20

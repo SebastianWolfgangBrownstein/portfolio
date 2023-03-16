@@ -8,7 +8,7 @@ const About = () => {
     <section id="about" className="
       bg-gunmetal-dark text-center
       relative flex flex-col justify-center 
-      w-full px-8 py-40  
+      w-full px-5 py-40  
       sm:px-14
       lg:px-36 lg:py-60 lg:pb-72
       xl:px-60 xl:pb-72
@@ -24,7 +24,7 @@ const About = () => {
         >Hey, I&apos;m Seb. Nice to meet you.</h2>
 
         <p className="
-          text-tan text-md tracking-wide mb-10 leading-loose
+          text-tan text-md tracking-wide mb-10 leading-relaxed
           sm:text-lg sm:leading-loose
           lg:text-xl lg:leading-relaxed
           xl:mb-10 xl:leading-relaxed
@@ -33,7 +33,7 @@ const About = () => {
             
         </p>
         <p className="
-          text-tan text-md tracking-wide mb-10 leading-loose
+          text-tan text-md tracking-wide mb-10 leading-relaxed
           sm:text-lg sm:leading-loose
           lg:text-xl lg:leading-relaxed
           xl:mb-10 xl:leading-relaxed
@@ -44,7 +44,7 @@ const About = () => {
           founded 4 tech startups and worked on countless independent projects.
         </p>
         <p className="
-          text-tan text-md tracking-wide leading-loose
+          text-tan text-md tracking-wide leading-relaxed
           sm:text-lg sm:leading-loose
           lg:text-xl lg:leading-relaxed
           xl:leading-relaxed 
