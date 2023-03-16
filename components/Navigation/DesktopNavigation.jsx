@@ -74,10 +74,10 @@ const DesktopNavigation = () => {
 
     useEffect(() => {
         const sectionTops = { // Y Position of Tops of Sections
-            about: 915,
-            work: 2486,
-            experience: 3234,
-            testimonials: 4418,
+            about: document.getElementById('about').offsetTop,
+            work: document.getElementById('work').offsetTop,
+            experience: document.getElementById('experience').offsetTop,
+            testimonials: document.getElementById('testimonials').offsetTop,
             contact: 5300
         };
         
