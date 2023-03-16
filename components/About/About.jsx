@@ -51,7 +51,7 @@ const About = () => {
           2xl:mb-10">
           I&apos;m a curious thinker, lighthearted adventurer & enthusiastic 
           mentor. In my spare time you&apos;ll find me learning new skills, building 
-          custom motorcycles & curating fine art for my local gallery.
+          custom motorcycles & curating fine art.
         </p>
         {/* <p className="text-tan text-md sm:text-lg lg:text-xl 2xl:mb-10">
           
