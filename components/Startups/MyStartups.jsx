@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
-import Startup from './Startup'
+import Startup from './Startup';
 import StartupDetails from './StartupDetails';
+import StartupDetailsMobile from './StartupDetailsMobile';
 import StartConversation from './StartConversation';
-import startupDetails from '../../data/startupDetails'
+import startupDetails from '../../data/startupDetails';
+import useMediaQuery from '../../hooks/useMediaQuery';
 
 
 const MyStartups = () => {
+    const isMobile = useMediaQuery("(max-width: 768px)")
     
     const [showingDetails, setShowingDetails] = useState(false);
 
@@ -120,11 +123,20 @@ const MyStartups = () => {
                     expand={moreInfo}
                 />
             </div>
-            <StartupDetails 
+            {isMobile ? (
+                <StartupDetailsMobile 
+                    showing={showingDetails}
+                    hideDetails={hideDetails}
+                    details={details}
+                />
+            ): (
+                <StartupDetails 
                 showing={showingDetails}
                 hideDetails={hideDetails}
                 details={details}
             />
+            )}
+            
             
             <StartConversation />
             
