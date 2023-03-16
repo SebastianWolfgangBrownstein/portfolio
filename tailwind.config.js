@@ -84,7 +84,8 @@ module.exports = {
         cloudfront: '#d64f40',
         lodash: '#318bf2',
         ramda: '#814091',
-        supertest: '#0b7f13'
+        supertest: '#0b7f13',
+        ambassador: '#715dca'
       },
       fontFamily: {
         genos: ['Genos', 'sans-serif'],
