@@ -80,8 +80,12 @@ module.exports = {
         350: "50rem",
         400: "55rem",
         450: "60rem"
+      },
+      screens: {
+        'xs': '425px'
       }
     },
+    
   },
   plugins: [],
 }

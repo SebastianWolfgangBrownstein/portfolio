@@ -9,16 +9,32 @@ const Startup = ({
 }) => {
 
     return (
-        <div className="
-        grid grid-rows-2 space-y-6 max-h-80 h-80 px-5 py-4 bg-gunmetal border border-gold rounded-xl shadow-lg
-        lg:h-96 lg:space-y-10
-        xl:h-80 xl:space-y-3 xl:py-3">
-            <div className="grid grid-cols-5 w-full mb-14 xl:mb-6">
+        <div id="startup" className="
+            grid grid-rows-2 gap-y-0 px-5 pt-0 pb-2 bg-gunmetal border border-gold rounded-xl shadow-lg
+            xs:grid-rows-3 xs:pb-9
+            sm:grid-rows-4 sm:gap-y-3 sm:pt-2 sm:pb-16
+            md:grid-rows-2 md:gap-y-10 md:pt-8 md:pb-8 
+            lg:gap-y-10 lg:pb-0
+            xl:grid-rows-3 xl:gap-y-0 xl:pb-4 xl:pt-2 
+            2xl:grid-rows-2 2xl:pb-8
+        ">
+            <div className="
+                grid grid-cols-5 w-full mb-2 
+                xs:row-start-1 xs:row-end-3
+                sm:row-start-1 sm:row-end-4
+                md:row-start-1 md:row-end-2
+                xl:row-start-1 xl:row-end-3 
+                2xl:row-start-1 2xl:row-end-2
+            ">
                 <div className="col-start-2 col-end-5 pt-7">
                     <Image src={logoPath} alt={name} width={logoWidth} height={logoHeight} className="inline-block"/>
                 </div>
             </div>
-            <p className="text-tan">{summary}</p>
+            <p className="
+                text-tan text-lg italic
+                xs:text-xl
+                sm:text-2xl sm:px-5
+            ">{summary}</p>
         </div>
     )
 }
