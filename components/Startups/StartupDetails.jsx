@@ -86,7 +86,7 @@ const StartupDetails = ({
                                 <section className="text-left mx-8">
                                     <div className="mb-8">
                                         <h2 className="text-gold text-lg mb-2"><strong>Summary</strong></h2>
-                                        <p className="text-tan-200 text-xl leading-relaxed">
+                                        <p className="text-tan-200 text-xl leading-relaxed tracking-wide">
                                             {description}
                                         </p>
                                     </div>
@@ -190,7 +190,9 @@ const StartupDetails = ({
                                                 flex justify-start items-center space-x-5 mb-6
                                                 xl:h-16 xl:mb-2
                                             ">
-                                                <div className="w-14 h-14 border border-gold rounded-full"></div>
+                                                <div className="w-14 h-14 border border-gunmetal-dark shadow-lg rounded-full overflow-hidden">
+                                                    <Image src={member.photoUrl} alt={member.name} width={150} height={150} className="object-cover"/>
+                                                </div>
                                                 <div className="justify-items-center content-center">
                                                     <h2 className="text-xl text-gold">{member.name}</h2>
                                                     <p className='text-tan'>{member.title}</p>

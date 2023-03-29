@@ -203,7 +203,9 @@ const StartupDetailsMobile = ({
                                     <li key={i} className="
                                         flex justify-start items-center space-x-5 mb-6
                                     ">
-                                        <div className="w-14 h-14 border border-gold rounded-full"></div>
+                                        <div className="w-14 h-14 border border-gunmetal-dark rounded-full overflow-hidden">
+                                            <Image src={member.photoUrl} alt={member.name} width={150} height={150} className="object-cover"/>
+                                        </div>
                                         <div className="justify-items-center content-center">
                                             <h2 className="text-xl text-gold">{member.name}</h2>
                                             <p className='text-tan'>{member.title}</p>
