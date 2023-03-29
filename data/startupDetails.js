@@ -73,7 +73,7 @@ const startupDetails = {
                 title: "Junior Developer"
             },
             {
-                name: "Dave Baroni",
+                name: "Jack Mackey",
                 photoUrl: "",
                 title: "Marketing & Outreach"
             }
