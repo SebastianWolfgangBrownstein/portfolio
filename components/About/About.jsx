@@ -1,4 +1,5 @@
 import DesktopNavigation from "../Navigation/DesktopNavigation"
+import MobileNavigation from "../Navigation/MobileNavigation";
 import useMediaQuery from "../../hooks/useMediaQuery"
 
 const About = () => {
@@ -14,7 +15,7 @@ const About = () => {
       xl:px-60 xl:pb-72
       2xl:px-96 2xl:py-40 2xl:pb-56"
     >
-        {isDesktop ? <DesktopNavigation /> : <></> }
+        {isDesktop ? <DesktopNavigation /> : <MobileNavigation /> }
 
         <h2 className="
           text-3xl text-gold font-play mb-10

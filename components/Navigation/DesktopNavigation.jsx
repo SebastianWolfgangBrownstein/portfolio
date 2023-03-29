@@ -154,7 +154,7 @@ const DesktopNavigation = () => {
     }, [])
 
     return (
-        <section ref={navRef} className={classes.header} >
+        <div ref={navRef} className={classes.header} >
             <nav className={classes.menu}>
                 <ul>
                     <NavItem 
@@ -196,7 +196,7 @@ const DesktopNavigation = () => {
                     <polygon className="lb" points="1123,53 1203,53 1213,43 1223,53 1303,53" />
                 </svg>
             </nav>
-        </section>
+        </div>
     )
 }
 
