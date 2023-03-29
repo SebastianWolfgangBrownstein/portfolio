@@ -23,7 +23,7 @@ const Project = ({
                     <p className="text-tan">{description}</p>
                 </div>
                 <div className="">
-                    <ul className="flex flex-wrap lg:flex-nowrap lg:justify-end space-x-3 text-right">
+                    <ul className="flex flex-wrap space-x-0 lg:flex-nowrap lg:justify-end lg:space-x-3 text-right">
                         {technologies.map((tech, i) => (
                             <li 
                                 key={i}

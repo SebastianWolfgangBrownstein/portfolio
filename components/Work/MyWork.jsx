@@ -54,34 +54,34 @@ const MyWork = () => {
                     lg:text-right lg:bg-gunmetal lg:shadow-lg">
                       <p className="text-tan-200 xs:text-lg">A web tool for converting video files to raw audio. Achieved 10-15% faster conversions than alternatives while allowing the user full control over the file&apos;s metadata, output format, and audio quality.</p>
                   </div>
-                  <div className="px-0 xs:px-4 md:px-10 lg:px-0">
+                  <div className="px-4 md:px-10 lg:px-0">
                       <ul className="
-                        flex flex-wrap space-x-3 text-right
+                        flex flex-wrap text-right
                         lg:flex-nowrap lg:justify-end">
                           <li className={`
                                   border border-nextjs text-nextjs font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Nextjs</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Nextjs</li>
                           <li className={`
                                   border border-typescript text-typescript font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Typescript</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Typescript</li>
                           <li className={`
                                   border border-sass text-sass font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Sass</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Sass</li>
                           <li className={`
                                   border border-python text-python font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Python</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Python</li>
                           <li className={`
                                   border border-mysql text-mysql font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>MySQL</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>MySQL</li>
                           <li className={`
                                   border border-jest text-jest font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Jest</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Jest</li>
                           <li className={`
                                   border border-flask text-flask font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>Flask</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>Flask</li>
                           <li className={`
                                   border border-ffmpeg text-ffmpeg font-genos text-xl
-                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4`}>ffmpeg</li>
+                                  bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3 lg:mr-0 lg:ml-3`}>ffmpeg</li>
                           
                          
                       </ul>

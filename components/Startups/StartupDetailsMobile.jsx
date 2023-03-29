@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { XIcon, ArrowLeftIcon} from '@sebthedev/swanky-icons'
+import { XIcon } from '@sebthedev/swanky-icons'
 import colors from "../../data/colors";
 import { gsap } from 'gsap';
 
@@ -11,14 +11,11 @@ const StartupDetailsMobile = ({
     details
 }) => {
     const detailsRef = useRef(null);
-    const [currentTab, setCurrentTab] = useState('overview');
     const [expanded, setExpanded] = useState(false)
 
     const {
         logoPath, 
         name, 
-        logoWidth, 
-        logoHeight, 
         description, 
         founded, 
         lifespan, 
@@ -62,8 +59,6 @@ const StartupDetailsMobile = ({
 
     const hide = () => {
         hideDetails()
-        
-        setCurrentTab('overview')
     }
 
     return (
@@ -74,7 +69,6 @@ const StartupDetailsMobile = ({
                 xl:w-1/4
             ">
                 <div className="w-full h-full overflow-y-auto pb-24">
-                    {/* <div  className="fixed inset-0 z-100 bg-black"></div> */}
                     <div className="fixed w-full z-[101] bg-gunmetal-dark/90 ">
                             {/* Header */}
                             <div className="px-4 py-3">
@@ -126,14 +120,14 @@ const StartupDetailsMobile = ({
                                 <div className="mb-5">
                                     <h2 className="text-gold mb-4 text-lg"><strong>Frontend</strong></h2>
                                     <ul className="
-                                        flex flex-wrap space-x-3 text-left
+                                        flex flex-wrap text-left
                                         lg:flex-nowrap lg:justify-start">
                                         {tech && tech.hasOwnProperty('frontend') && tech['frontend'].map((_tech, i) => (
                                         <li 
                                             key={i}
                                             className={`
                                             border font-genos text-xl
-                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4`}
+                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3`}
                                             style={{color: `${colors[_tech.toLowerCase()]}`, borderColor: `${colors[_tech.toLowerCase()]}`}}
                                         >{_tech}</li>
                                     ))}
@@ -144,14 +138,14 @@ const StartupDetailsMobile = ({
                                 <div className="mb-5">
                                     <h2 className="text-gold mb-4 text-lg"><strong>Backend</strong></h2>
                                     <ul className="
-                                        flex flex-wrap space-x-3 text-left
+                                        flex flex-wrap text-left
                                         lg:flex-nowrap lg:justify-start">
                                         {tech && tech.hasOwnProperty('backend') && tech['backend'].map((_tech, i) => (
                                         <li 
                                             key={i}
                                             className={`
                                             border font-genos text-xl
-                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4`}
+                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3`}
                                             style={{color: `${colors[_tech.toLowerCase()]}`, borderColor: `${colors[_tech.toLowerCase()]}`}}
                                         >{_tech}</li>
                                     ))}
@@ -162,14 +156,14 @@ const StartupDetailsMobile = ({
                                 <div className="mb-5">
                                     <h2 className="text-gold mb-4 text-lg"><strong>DevOps</strong></h2>
                                     <ul className="
-                                        flex flex-wrap space-x-3 text-left
+                                        flex flex-wrap text-left
                                         lg:flex-nowrap lg:justify-start">
                                         {tech && tech.hasOwnProperty('devops') && tech['devops'].map((_tech, i) => (
                                         <li 
                                             key={i}
                                             className={`
                                             border font-genos text-xl
-                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4`}
+                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3`}
                                             style={{color: `${colors[_tech.toLowerCase()]}`, borderColor: `${colors[_tech.toLowerCase()]}`}}
                                         >{_tech}</li>
                                     ))}
@@ -180,14 +174,14 @@ const StartupDetailsMobile = ({
                                 <div className="mb-5">
                                     <h2 className="text-gold mb-4 text-lg"><strong>Testing</strong></h2>
                                     <ul className="
-                                        flex flex-wrap space-x-3 text-left
+                                        flex flex-wrap text-left
                                         lg:flex-nowrap lg:justify-start">
                                         {tech && tech.hasOwnProperty('testing') && tech['testing'].map((_tech, i) => (
                                         <li 
                                             key={i}
                                             className={`
                                             border font-genos text-xl
-                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4`}
+                                            bg-overlay-400 rounded-full px-3 pb-1 mb-4 mr-3`}
                                             style={{color: `${colors[_tech.toLowerCase()]}`, borderColor: `${colors[_tech.toLowerCase()]}`}}
                                         >{_tech}</li>
                                     ))}
