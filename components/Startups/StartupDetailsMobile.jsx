@@ -95,29 +95,32 @@ const StartupDetailsMobile = ({
                             </div>
                         </div>
                         {/* Overview */}
-                        <section className="mt-28 text-left mx-5">
+                        <section className="mt-28 text-left mx-5 sm:mx-8">
                             <div className="mb-8">
                                 <h1 className="text-gold text-lg mb-2"><strong>Summary</strong></h1>
-                                <p className="text-tan-300 text-lg leading-relaxed">{description}</p>
+                                <p className="
+                                    text-tan-300 text-lg leading-relaxed tracking-wide
+                                    xs:text-xl xs:leading-9
+                                ">{description}</p>
                             </div>
-                            <div className="flex flex-col sm:flex-row sm:space-x-16">
+                            <div className="flex flex-col xs:flex-row xs:space-x-10 sm:space-x-16">
                                 <div className="mb-3">
                                     <h2 className="text-gold text-lg mb-1"><strong>Founded</strong></h2>
-                                    <p className="text-tan-300 text-lg leading-relaxed">{founded}</p>
+                                    <p className="text-tan-300 text-lg xs:text-xl leading-relaxed">{founded}</p>
                                 </div>
                                 <div className="mb-3">
                                     <h2 className="text-gold text-lg mb-1"><strong>Lifespan</strong></h2>
-                                    <p className="text-tan-300 text-lg leading-relaxed">{lifespan}</p>
+                                    <p className="text-tan-300 text-lg xs:text-xl leading-relaxed">{lifespan}</p>
                                 </div>
                                 <div className="mb-3">
                                     <h2 className="text-gold text-lg mb-1"><strong>Status</strong></h2>
-                                    <p className="text-tan-300 text-lg leading-relaxed">{status}</p>
+                                    <p className="text-tan-300 text-lg xs:text-xl leading-relaxed">{status}</p>
                                 </div>
                             </div>
                             
                         </section>
                         {/* Tech */}
-                        <section className="text-left mt-10 mx-5">
+                        <section className="text-left mt-10 mx-5 sm:mx-8">
                             
                             {tech.hasOwnProperty('frontend') && (
                                 <div className="mb-5">
@@ -193,15 +196,15 @@ const StartupDetailsMobile = ({
                             )}
                         </section>
                         {/* Team */}
-                        <section className="mt-10 text-left mx-5 pb-10">
+                        <section className="mt-10 text-left mx-5 pb-10 sm:mx-8">
                             <h2 className="text-gold text-lg mb-6"><strong>Team</strong></h2>
                             <ul>
                                 {team && team.map((member, i) => (
                                     <li key={i} className="
-                                        flex space-x-5 mb-6
+                                        flex justify-start items-center space-x-5 mb-6
                                     ">
                                         <div className="w-14 h-14 border border-gold rounded-full"></div>
-                                        <div className="col-start-2 col-end-5 justify-items-center content-center">
+                                        <div className="justify-items-center content-center">
                                             <h2 className="text-xl text-gold">{member.name}</h2>
                                             <p className='text-tan'>{member.title}</p>
                                         </div>

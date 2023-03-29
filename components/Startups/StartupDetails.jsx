@@ -34,13 +34,12 @@ const StartupDetails = ({
     {showing ? (
         <>
             <div
-                className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[101] outline-none focus:outline-none "
+                className="flex justify-center items-start mt-6 lg:mt-16  overflow-x-hidden overflow-y-auto fixed inset-0 z-[101] outline-none focus:outline-none "
             >
                 <div className="opacity-40 fixed inset-0 z-100 bg-black" onClick={() => hide()}></div>
                 <div className="
-                    relative w-auto my-6 mx-auto max-w-[90%]
-                    lg:min-w-[50%]
-                    2xl:max-w-7xl
+                    relative w-auto my-6 mx-auto min-w-[90%] max-w-[90%]
+                    2xl:min-w-[70%] 2xl:max-w-[70%]
                 ">
                     {/* Content */}
                     <div className=" border-4 border-byzantine-dark rounded-lg shadow-lg relative flex flex-col w-full bg-byzantine-dark outline-none focus:outline-none">
@@ -188,11 +187,11 @@ const StartupDetails = ({
                                     <ul>
                                         {team && team.map((member, i) => (
                                             <li key={i} className="
-                                                grid grid-cols-4 gap-x-5 mb-6
-                                                xl:w-1/2 xl:h-16 xl:mb-2
+                                                flex justify-start items-center space-x-5 mb-6
+                                                xl:h-16 xl:mb-2
                                             ">
-                                                <div className="ml-auto col-start-1 col-end-2 w-14 h-14 border border-gold rounded-full"></div>
-                                                <div className="col-start-2 col-end-5 justify-items-center content-center">
+                                                <div className="w-14 h-14 border border-gold rounded-full"></div>
+                                                <div className="justify-items-center content-center">
                                                     <h2 className="text-xl text-gold">{member.name}</h2>
                                                     <p className='text-tan'>{member.title}</p>
                                                 </div>
