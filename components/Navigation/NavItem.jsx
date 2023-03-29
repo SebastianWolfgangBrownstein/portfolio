@@ -11,9 +11,7 @@ const NavItem = ({
     isActive,
     label,
     linkId,
-    onClick
 }) => {
-    const handleClick = () => onClick(index);
 
     return (
         <a href={`#${linkId}`}>
@@ -22,7 +20,6 @@ const NavItem = ({
                     navItem: true,
                     active: index === isActive ? true : false
                 })}
-                onClick={() => handleClick()}
             >{label}</li>
         </a>
         
