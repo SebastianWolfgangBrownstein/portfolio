@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { XIcon } from '@sebthedev/swanky-icons'
 import colors from "../../data/colors";
-import { gsap } from 'gsap';
+import { gsap } from '../../config/gsapConfig';
 
 
 const StartupDetailsMobile = ({

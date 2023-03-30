@@ -72,7 +72,7 @@
 
      /* DEFAULT */
 .mobileNav {
-  /* position: absolute; */
+  position: absolute;
   top: 0;
   right: 0;
   display: inline-block;

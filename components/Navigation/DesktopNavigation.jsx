@@ -1,12 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { gsap, ScrollTrigger } from '../../config/gsapConfig';
 import classes from './Navigation.module.css';
 import NavItem from './NavItem';
 
 
 const DesktopNavigation = () => {
-    gsap.registerPlugin(ScrollTrigger)
     const navRef = useRef(null);
     const [active, setActive] = useState(0);
 

@@ -1,13 +1,11 @@
 import { useEffect, useState, useRef, useCallback } from 'react'
-import { gsap } from 'gsap/dist/gsap';
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { gsap, ScrollTrigger } from '../../config/gsapConfig';
 import classes from './MobileNavigation.module.css'
 import classNames from 'classnames';
 
 let cx = classNames.bind(classes);
 
 const MobileNavigation = () => {
-    gsap.registerPlugin(ScrollTrigger)
     const navRef = useRef(null);
     const buttonRef = useRef(null);
 
@@ -22,13 +20,7 @@ const MobileNavigation = () => {
     const openMenu = () => { setIsOpen(true) };
     const closeMenu = () => { setIsOpen(false) };
 
-    const setFixed = useCallback(() => gsap.set([navRef.current, buttonRef.current], {
-        position: 'fixed'
-    }), []) 
-
-    const setAbsolute = useCallback(() => gsap.set([navRef.current, buttonRef.current], {
-        position: 'absolute'
-    }), [])
+    
    
     useEffect(() => {
         var menuTimeline = gsap.timeline({
@@ -94,7 +86,13 @@ const MobileNavigation = () => {
 
         /* Sticky Toggle Trigger */
 
-        
+        const setFixed = () => gsap.set([navRef.current, buttonRef.current], {
+            position: 'fixed'
+        });
+    
+        const setAbsolute = () => gsap.set([navRef.current, buttonRef.current], {
+            position: 'absolute'
+        });
 
         ScrollTrigger.create({
             trigger: document.querySelector('#about'),
@@ -104,7 +102,7 @@ const MobileNavigation = () => {
             onLeaveBack: () => setAbsolute()
         })
 
-    }, [isOpen, setFixed, setAbsolute])
+    }, [isOpen])
 
     
 
