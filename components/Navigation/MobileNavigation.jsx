@@ -125,24 +125,3 @@ const MobileNavigation = () => {
 }
 
 export default MobileNavigation;
-
-{/* <>
-            <input 
-                id="mobile-menu-toggle" 
-                className={classes.toggle} 
-                type="checkbox" 
-                checked={isOpen}
-                onChange={toggleMenu}
-                ></input>
-            <label htmlFor="mobile-menu-toggle" className={classes.toggleContainer} >
-                <span ref={buttonRef} className={classes.buttonToggle}></span>
-            </label>
-
-            <nav ref={navRef}  className={classes.mobileNav}>
-                <a className={cx('font-play', classes.mobileNavItem)} href="#about" onClick={toggleMenu}><strong>About</strong></a>
-                <a className={cx('font-play',classes.mobileNavItem)} href="#work" onClick={toggleMenu}><strong>Work</strong></a>
-                <a className={cx('font-play',classes.mobileNavItem)} href="#experience" onClick={toggleMenu}><strong>Experience</strong></a>
-                <a className={cx('font-play',classes.mobileNavItem)} href="#testimonials" onClick={toggleMenu}><strong>Testimonials</strong></a>
-                <a className={cx('font-play',classes.mobileNavItem)} href="#contact" onClick={toggleMenu}><strong>Contact</strong></a>
-            </nav>
-        </> */}
