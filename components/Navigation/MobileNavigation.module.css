@@ -1,0 +1,233 @@
+/* Mobile Menu Styles */
+
+.toggle {
+  display: none;
+}
+
+/* Toggle Button */
+
+    /* DEFAULT */
+.toggleButton {
+    --button-scale: 0;
+    --button-before-y: -50%;
+    --button-before-rotation: 45deg;
+    --button-after-y: 50%;
+    --button-after-rotation: -45deg;
+    --button-shadow-blur: 16px;
+    --button-shadow-spread: 20px;
+    --button-shadow-inner-spread: 9px;
+    --button-shadow-color: rgba(52, 84, 209, 0.5);
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: 0.6s;
+    top: 15px;
+    right: 4px;
+    z-index:100;
+    box-shadow: 0 0 var(--button-shadow-blur) var(--button-shadow-spread) var(--button-shadow-color), inset 0 0 0 var(--button-shadow-inner-spread) var(--button-shadow-color);
+}
+
+.toggleButton:before, .toggleButton:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--gold);
+  //background-color: white;
+  border-radius: 5px;
+  /* transition: 0.5s; */
+}
+
+.toggleButton:before {
+  transform: translateY(var(--button-before-y)) rotate(var(--button-before-rotation)) scale(var(--button-scale));
+}
+.toggleButton:after {
+  transform: translateY(var(--button-after-y)) rotate(var(--button-after-rotation)) scale(var(--button-scale));
+}
+
+     /* ACTIVE */
+/* .toggle:checked ~ .toggleContainer .toggleButton {
+  box-shadow: 0 0 0 1200px rgba(0, 0, 0, 0.9), inset 0 0 0 20px rgba(0, 0, 0, 0.9);
+} */
+
+/* .toggle:checked ~ .toggleContainer .toggleButton:before {
+    transform: translateY(-50%) rotate(45deg) scale(1);
+}
+
+.toggle:checked ~ .toggleContainer .toggleButton:after {
+  transform: translateY(-50%) rotate(-45deg) scale(1);
+} */
+
+
+/* Mobile Nav */
+
+
+     /* DEFAULT */
+.mobileNav {
+  /* position: absolute; */
+  top: 0;
+  right: 0;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-right: 25px;
+  margin-left: 25px;
+  pointer-events: none;
+  /* transition: 0.5s; */
+  z-index: 100;
+}
+
+     /* ACTIVE */
+.toggle:checked ~ .mobileNav {
+    position: fixed;
+    pointer-events: auto;
+    left: 0;
+    right:0;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(35px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Nav Item */
+
+  /* DEFAULT */
+.mobileNavItem {
+  --nav-item-scale: 0.2;
+  --about-nav-delay: 0s;
+  --work-nav-delay: 0.05s;
+  --experience-nav-delay: 0.1s;
+  --testimonials-nav-delay: 0.15s;
+  --contacts-nav-delay: 0.2s;
+  position: relative;
+  display: inline-block;
+  float: right;
+  clear: both;
+  color: transparent;
+  font-size: 1rem;
+  letter-spacing: -6.2px;
+  height: 7px;
+  line-height: 7px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: scaleY(var(--nav-item-scale));
+  transition: 0.2s, opacity 1s;
+}
+
+.mobileNavItem:before {  /* Hamburger */
+  position: absolute;
+  content: "";
+  top: 80px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--gold);
+  transform: translateY(-50%) scaleY(5);
+  transition: 0.5s;
+}
+
+.mobileNavItem:nth-child(1) {
+  letter-spacing: -8px;
+}
+.mobileNavItem:nth-child(2) {
+  letter-spacing: -7px;
+}
+.mobileNavItem:nth-child(n+4) {
+  --nav-item-opacity: 0;
+  letter-spacing: -8px;
+  margin-top: -7px;
+  opacity: var(--nav-item-opacity);
+}
+
+
+.mobileNavItem:nth-child(1) {
+  transition-delay: 0s;
+}
+.mobileNavItem:nth-child(1):before {
+  transition-delay: 0s;
+}
+.mobileNavItem:nth-child(2) {
+  transition-delay: 0.05s;
+}
+.mobileNavItem:nth-child(2):before {
+  transition-delay: 0.05s;
+}
+.mobileNavItem:nth-child(3) {
+  transition-delay: 0.1s;
+}
+.mobileNavItem:nth-child(3):before {
+  transition-delay: 0.1s;
+}
+.mobileNavItem:nth-child(4) {
+  transition-delay: 0.15s;
+}
+.mobileNavItem:nth-child(4):before {
+  transition-delay: 0.15s;
+}
+
+.mobileNavItem:nth-child(5) {
+  transition-delay: 0.2s;
+}
+.mobileNavItem:nth-child(5):before {
+  transition-delay: 0.2s;
+}
+
+
+
+     /* ACTIVE */
+.toggle:checked ~ .mobileNav .mobileNavItem {
+    color: var(--gold);
+    letter-spacing: 0.25em;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    float: none;
+    text-align: center;
+    margin-top: 0;
+    /* opacity: 1; */
+    /* transform: scaleY(1); */
+    transition: 0.4s, opacity 0.1s;
+}
+
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(1) {
+  transition-delay: 0.2s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(1):before {
+  transition-delay: 0.2s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(2):before {
+  transition-delay: 0.15s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(3) {
+  transition-delay: 0.1s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(3):before {
+  transition-delay: 0.1s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(4) {
+  transition-delay: 0s;
+}
+.toggle:checked ~ .mobileNav .mobileNavItem:nth-child(4):before {
+  transition-delay: 0s;
+}
+
+
+.toggle:checked ~ .mobileNav .mobileNavItem:before {
+  opacity: 0;
+  display: none;
+}
