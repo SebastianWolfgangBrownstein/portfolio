@@ -91,6 +91,7 @@ const DesktopNavigation = () => {
 
             /* Testimonials Tab Animation */
             gsap.to(testimonialsTab, {
+                duration: 0.6,
                 y: -40,
                 ease: "bounce.out",
                 delay: 0.4,
