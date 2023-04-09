@@ -13,7 +13,6 @@
     --button-before-rotation: 45deg;
     --button-after-y: 50%;
     --button-after-rotation: -45deg;
-    --button-shadow-blur: 16px;
     --button-shadow-spread: 20px;
     --button-shadow-inner-spread: 9px;
     --button-shadow-color: rgba(52, 84, 209, 0.5);
@@ -30,7 +29,7 @@
     top: 15px;
     right: 4px;
     z-index:100;
-    box-shadow: 0 0 var(--button-shadow-blur) var(--button-shadow-spread) var(--button-shadow-color), inset 0 0 0 var(--button-shadow-inner-spread) var(--button-shadow-color);
+    box-shadow: 0 0 16px var(--button-shadow-spread) var(--button-shadow-color), inset 0 0 0 var(--button-shadow-inner-spread) var(--button-shadow-color);
 }
 
 .toggleButton:before, .toggleButton:after {
