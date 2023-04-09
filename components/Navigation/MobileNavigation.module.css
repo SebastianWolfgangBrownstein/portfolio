@@ -16,7 +16,7 @@
     --button-shadow-blur: 16px;
     --button-shadow-spread: 20px;
     --button-shadow-inner-spread: 9px;
-    --button-shadow-color: rgba(52, 84, 209, 0.5);
+    --button-shadow-color: rgba(52, 84, 209, 0.9);
     position: absolute;
     display: inline-block;
     width: 20px;
@@ -98,6 +98,7 @@
     transform: translateY(35px);
     display: flex;
     flex-direction: column;
+    z-index: 100;
 }
 
 /* Mobile Nav Item */

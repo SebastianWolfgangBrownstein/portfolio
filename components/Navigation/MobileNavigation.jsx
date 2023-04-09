@@ -29,8 +29,7 @@ const MobileNavigation = () => {
         const ctx = gsap.context(() => {
             /* Menu Open/Close Timeline */
             timeline.current = gsap.timeline({
-                defaults: {duration: 0.04},
-                onUpdate: () => { }
+                defaults: {duration: 0.04}
             })
             .addLabel("start", 0)
             .fromTo(buttonRef.current, {
@@ -42,7 +41,7 @@ const MobileNavigation = () => {
                 "--button-shadow-blur": "16px",
                 "--button-shadow-spread": "20px",
                 "--button-shadow-inner-spread": "9px",
-                "--button-shadow-color": "rgba(52, 84, 209, 0.5)"
+                "--button-shadow-color": "rgba(52, 84, 209, 0.9)"
             },{
                 "--button-before-y": "50%",
                 "--button-before-rotation": "45deg",
