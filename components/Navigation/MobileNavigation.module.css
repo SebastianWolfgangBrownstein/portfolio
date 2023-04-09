@@ -134,7 +134,7 @@
   height: 2px;
   background-color: var(--gold);
   transform: translateY(-50%) scaleY(5);
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
 
 .mobileNavItem:nth-child(1) {

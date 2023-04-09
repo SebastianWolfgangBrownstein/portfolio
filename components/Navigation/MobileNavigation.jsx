@@ -55,8 +55,9 @@ const MobileNavigation = () => {
                 "--nav-item-scale": 0.2
             }, {
                 "--nav-item-scale": 1,
-                duration: 0.2
-            }, "start+=0.1")
+                duration: 0.2,
+                ease: "back.out(4.5)"
+            }) //, "start+=0.1"
             .fromTo([testimonialsRef.current, contactRef.current], {
                 "--nav-item-opacity": 0
             }, {
