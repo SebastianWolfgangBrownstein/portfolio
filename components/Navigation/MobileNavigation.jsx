@@ -50,20 +50,21 @@ const MobileNavigation = () => {
                 "--button-shadow-spread": "1200px",
                 "--button-shadow-inner-spread": "20px",
                 "--button-shadow-color": "rgba(0, 0, 0, 0.9)"
-            })
+            }, "start")
             .fromTo(".navItem", {
-                "--nav-item-scale": 0.2
+                "--nav-item-scale": 0.2,
+                immediateRender: false
             }, {
                 "--nav-item-scale": 1,
                 duration: 0.2,
                 ease: "back.out(4.5)"
-            }) //, "start+=0.1"
+            }, "start") //, "start+=0.1"
             .fromTo([testimonialsRef.current, contactRef.current], {
                 "--nav-item-opacity": 0
             }, {
                 "--nav-item-opacity": 1,
                 duration: 0.4
-            })
+            }, "start")
             .progress(0).pause();
 
             /* Sticky Toggle Trigger */
@@ -90,9 +91,9 @@ const MobileNavigation = () => {
 
     useEffect(() => {
         if (isOpen && !timeline.current.isActive()) {
-            timeline.current.play();
+            timeline.current.timeScale(1).play();
         } else if (!isOpen && timeline.current.progress() === 1) {
-            timeline.current.reverse(0);
+            timeline.current.timeScale(2).reverse(0);
         }
     }, [isOpen])
 

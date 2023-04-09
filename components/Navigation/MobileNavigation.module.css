@@ -9,7 +9,7 @@
     /* DEFAULT */
 .toggleButton {
     --button-scale: 0;
-    --button-before-y: -50%;
+    --button-before-y: 50%;
     --button-before-rotation: 45deg;
     --button-after-y: 50%;
     --button-after-rotation: -45deg;
@@ -72,7 +72,7 @@
      /* DEFAULT */
 .mobileNav {
   position: absolute;
-  top: 0;
+  top: 16px;
   right: 0;
   display: inline-block;
   margin-top: 25px;
@@ -105,11 +105,6 @@
   /* DEFAULT */
 .mobileNavItem {
   --nav-item-scale: 0.2;
-  --about-nav-delay: 0s;
-  --work-nav-delay: 0.05s;
-  --experience-nav-delay: 0.1s;
-  --testimonials-nav-delay: 0.15s;
-  --contacts-nav-delay: 0.2s;
   position: relative;
   display: inline-block;
   float: right;
@@ -122,20 +117,64 @@
   text-transform: uppercase;
   white-space: nowrap;
   transform: scaleY(var(--nav-item-scale));
-  transition: 0.2s, opacity 1s;
+  transition-property: scaleY;
+  transition-duration: 0.1s;
 }
 
+.mobileNavItem > strong {
+  transform: scaleY(var(--nav-item-scale));
+  transition-property: scaleY;
+  transition-duration: 0.1s;
+}
+
+    /* ACTIVE */
+    .toggle:checked ~ .mobileNav .mobileNavItem {
+    color: var(--gold);
+    letter-spacing: 0.25em;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    margin-top: 0;
+    float: none;
+    text-align: center;
+    transition-property: scaleY;
+    transition-duration: 6s;
+
+    /* transition: scaleY 0.2s;
+    transition: translateY 0.2s; */
+    
+    /* opacity: 1; */
+    /* transform: scaleY(1); */
+    /* transition: scaleY 0.2s; */
+    /* transition: line-height scaleY 0.2s; */
+    /* transition: scaleY 0.2s; */
+    /* transition: line-height 0.2s; */
+    /* transition: scaleY translateY 0.2s; */
+}
+
+/* DEFAULT */
 .mobileNavItem:before {  /* Hamburger */
   position: absolute;
   content: "";
-  top: 80px;
-  right: 0;
+  top: 0px;
+  right: 0px;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background-color: var(--gold);
-  transform: translateY(-50%) scaleY(5);
+  transform: translateY(-50%) scaleY(4);
+  /* transform: scaleY(4); */
+  /* transform: translateY(-50%); */
   /* transition: 0.5s; */
 }
+
+/* ACTIVE */
+.toggle:checked ~ .mobileNav .mobileNavItem:before {
+  opacity: 0;
+  display: none;
+}
+
+/* These properties make the hamburger have 3 bars  */
 
 .mobileNavItem:nth-child(1) {
   letter-spacing: -8px;
@@ -158,26 +197,30 @@
   transition-delay: 0s;
 }
 .mobileNavItem:nth-child(2) {
-  transition-delay: 0.05s;
+  transition-delay: 0s;
+  /* transition-delay: 0.05s; */
 }
 .mobileNavItem:nth-child(2):before {
   transition-delay: 0.05s;
 }
 .mobileNavItem:nth-child(3) {
-  transition-delay: 0.1s;
+  transition-delay: 0s;
+  /* transition-delay: 0.1s; */
 }
 .mobileNavItem:nth-child(3):before {
   transition-delay: 0.1s;
 }
 .mobileNavItem:nth-child(4) {
-  transition-delay: 0.15s;
+  transition-delay: 0s;
+  /* transition-delay: 0.15s; */
 }
 .mobileNavItem:nth-child(4):before {
   transition-delay: 0.15s;
 }
 
 .mobileNavItem:nth-child(5) {
-  transition-delay: 0.2s;
+  transition-delay: 0s;
+  /* transition-delay: 0.2s; */
 }
 .mobileNavItem:nth-child(5):before {
   transition-delay: 0.2s;
@@ -185,21 +228,7 @@
 
 
 
-     /* ACTIVE */
-.toggle:checked ~ .mobileNav .mobileNavItem {
-    color: var(--gold);
-    letter-spacing: 0.25em;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1.3rem;
-    margin-bottom: 25px;
-    float: none;
-    text-align: center;
-    margin-top: 0;
-    /* opacity: 1; */
-    /* transform: scaleY(1); */
-    transition: 0.4s, opacity 0.1s;
-}
+
 
 .toggle:checked ~ .mobileNav .mobileNavItem:nth-child(1) {
   transition-delay: 0.2s;
@@ -227,7 +256,3 @@
 }
 
 
-.toggle:checked ~ .mobileNav .mobileNavItem:before {
-  opacity: 0;
-  display: none;
-}
