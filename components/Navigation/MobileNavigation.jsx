@@ -38,7 +38,7 @@ const MobileNavigation = () => {
                 "--button-after-y": "50%",
                 "--button-after-rotation": "-45deg",
                 "--button-scale": 0,
-                "--button-shadow-blur": "16px",
+                // "--button-shadow-blur": "16px",
                 "--button-shadow-spread": "20px",
                 "--button-shadow-inner-spread": "9px",
                 // "--button-shadow-color": "rgba(52, 84, 209, 0.9)"
@@ -48,7 +48,7 @@ const MobileNavigation = () => {
                 "--button-after-y": "50%",
                 "--button-after-rotation": "-45deg",
                 "--button-scale": 1,
-                "--button-shadow-blur": "0px",
+                // "--button-shadow-blur": "0px",
                 "--button-shadow-spread": "1200px",
                 "--button-shadow-inner-spread": "20px",
                 // "--button-shadow-color": "rgba(0, 0, 0, 0.9)"
