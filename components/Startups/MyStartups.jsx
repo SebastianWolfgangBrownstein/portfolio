@@ -1,63 +1,12 @@
-import { useState, useEffect } from 'react';
 import Startup from './Startup';
-import StartupDetails from './StartupDetails';
-import StartupDetailsMobile from './StartupDetailsMobile';
+
 import StartConversation from './StartConversation';
 import startupDetails from '../../data/startupDetails';
 import useMediaQuery from '../../hooks/useMediaQuery';
 
 
 const MyStartups = () => {
-    const isMobile = useMediaQuery("(max-width: 768px)")
-    
-    const [showingDetails, setShowingDetails] = useState(false);
-
-    const [details, setDetails] = useState({
-        logoPath: "",
-        name: "",
-        logoWidth: "",
-        logoHeight: "",
-        description: "",
-        founded: "",
-        lifespan: "",
-        status: "",
-        tech: [],
-        team: []
-    })
-
-    const moreInfo = (_startupDetails) => {
-        const {logoPath, name, logoWidth, logoHeight, description, founded, lifespan, status, tech, team} = _startupDetails;
-        setDetails({
-            ...details,
-            logoPath,
-            name,
-            logoWidth,
-            logoHeight,
-            description,
-            founded,
-            lifespan,
-            status,
-            tech,
-            team
-        })
-        setShowingDetails(true);
-    }
-
-    const hideDetails = () => {
-        setShowingDetails(false);
-        setDetails({
-            logoPath: "",
-            name: "",
-            logoWidth: "",
-            logoHeight: "",
-            description: "",
-            founded: "",
-            lifespan: "",
-            status: "",
-            tech: [],
-            team: []
-        })
-    }
+    const isMobile = useMediaQuery("(max-width: 768px)");
 
     return (
         <section id="experience" className="
@@ -87,56 +36,22 @@ const MyStartups = () => {
                 "
             >
                 <Startup 
-                    name="SXD"
-                    logoPath="/images/SXDLogo.png"
-                    logoWidth={300}
-                    logoHeight={100}
-                    summary="A decentralized cloud storage platform for securely storing large multimedia files."
                     details={startupDetails['sxd']}
-                    expand={moreInfo}
+                    isMobile={isMobile}
                 />
                 <Startup 
-                    name="Arxade"
-                    logoPath="/images/ArxadeLogo.png"
-                    logoWidth={300}
-                    logoHeight={100}
-                    summary="A suite of backend APIs for live streaming, real-time communication, and multiplayer gaming."
                     details={startupDetails['arxade']}
-                    expand={moreInfo}
+                    isMobile={isMobile}
                 />
                 <Startup 
-                    name="CamBling"
-                    logoPath="/images/CamBlingLogo.png"
-                    logoWidth={300}
-                    logoHeight={100}
-                    summary="A gamified adult webcam site with a fully modernized design & disruptive performer policies."
                     details={startupDetails['cambling']}
-                    expand={moreInfo}
+                    isMobile={isMobile}
                 />
                 <Startup 
-                    name="Personafi"
-                    logoPath="/images/PersonafiLogo.png"
-                    logoWidth={300}
-                    logoHeight={100}
-                    summary="A marketplace of voice & personality skins for electronic personal assistants like Alexa."
                     details={startupDetails['personafi']}
-                    expand={moreInfo}
+                    isMobile={isMobile}
                 />
             </div>
-            {isMobile ? (
-                <StartupDetailsMobile 
-                    showing={showingDetails}
-                    hideDetails={hideDetails}
-                    details={details}
-                />
-            ): (
-                <StartupDetails 
-                showing={showingDetails}
-                hideDetails={hideDetails}
-                details={details}
-            />
-            )}
-            
             
             <StartConversation />
             

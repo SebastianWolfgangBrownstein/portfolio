@@ -1,5 +1,8 @@
 const startupDetails = {
     sxd: {
+        name: 'SXD',
+        logoPath: '/images/SXDLogo.png',
+        summary: 'A decentralized cloud storage platform for securely storing large multimedia files.',
         description: `
             SXD is a decentralized cloud media storage platform for storing high volume multimedia files. 
             The platform leverages a decentralized file storage infrastructure and other Web3 technologies 
@@ -25,6 +28,9 @@ const startupDetails = {
         ]
     },
     arxade: {
+        name: 'Arxade',
+        logoPath: '/images/ArxadeLogo.png',
+        summary: 'A suite of backend APIs for live streaming, real-time communication, and multiplayer gaming.',
         description: `
             Arxade is a collection of microservices for one-to-many live streaming, real-time communication, user payments 
             & payouts, session orchestration, ranking algorithm computation, and auxiliary systems. Arxade emerged in the process of 
@@ -51,6 +57,9 @@ const startupDetails = {
         ]
     },
     cambling: {
+        name: 'CamBling',
+        logoPath: '/images/CamBlingLogo.png',
+        summary: 'A gamified adult webcam site with a fully modernized design & disruptive performer policies.',
         description: `
             CamBling was a full-featured adult live streaming platform. My development work included: One-to-many live streaming support 
             for 100s of performers & 1000s of viewers, mass micropayment infrastructure, integration with 3rd-party broadcast 
@@ -95,6 +104,9 @@ const startupDetails = {
         ]
     },
     personafi: {
+        name: 'Personafi',
+        logoPath: '/images/PersonafiLogo.png',
+        summary: 'A marketplace of voice & personality skins for electronic personal assistants like Alexa.',
         description: `
             Personafi was an early stage marketplace concept for custom voice and personality modules compatible with 
             personal assistant tech, like Amazon Alexa & Google Home. Personafi's vision was to turn human personality 

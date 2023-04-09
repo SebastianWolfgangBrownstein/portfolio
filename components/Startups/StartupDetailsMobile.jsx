@@ -14,8 +14,8 @@ const StartupDetailsMobile = ({
     const [expanded, setExpanded] = useState(false)
 
     const {
-        logoPath, 
         name, 
+        logoPath, 
         description, 
         founded, 
         lifespan, 
@@ -31,9 +31,6 @@ const StartupDetailsMobile = ({
     }, [])
 
     useEffect(() => {
-
-        // console.log('Showing: ', showing)
-        // console.log('Expanded: ', expanded)
         const expand = gsap.to(detailsRef.current,
          {
              xPercent: 0,

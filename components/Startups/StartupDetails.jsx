@@ -12,10 +12,8 @@ const StartupDetails = ({
     const [currentTab, setCurrentTab] = useState('overview')
 
     const {
-        logoPath, 
         name, 
-        logoWidth, 
-        logoHeight, 
+        logoPath, 
         description, 
         founded, 
         lifespan, 
@@ -31,11 +29,10 @@ const StartupDetails = ({
 
     return (
     <>
-    {showing ? (
-        <>
             <div
-                className="flex justify-center items-start mt-6 lg:mt-16  overflow-x-hidden overflow-y-auto fixed inset-0 z-[101] outline-none focus:outline-none "
-            >
+                className=" justify-center items-start mt-6 lg:mt-16  overflow-x-hidden overflow-y-auto fixed inset-0 z-[101] outline-none focus:outline-none "
+                style={{display: showing ? 'flex' : 'none'}}
+           >
                 <div className="opacity-40 fixed inset-0 z-100 bg-black" onClick={() => hide()}></div>
                 <div className="
                     relative w-auto my-6 mx-auto min-w-[90%] max-w-[90%]
@@ -46,7 +43,7 @@ const StartupDetails = ({
                         {/* Header */}
                         <div className="bg-gunmetal flex items-center justify-start p-5 pl-12 rounded-t">
                             <div className=" grid grid-col-12">
-                                <Image src={logoPath} alt={name} width={logoWidth} height={logoHeight} 
+                                <Image src={logoPath} alt={name} width={150} height={50} 
                                 className="col-start-1 col-end-2 inline-block"/>
                             </div>
                             
@@ -203,20 +200,12 @@ const StartupDetails = ({
                                 </section>
                             )}
                             
-                            
-                            
                         </div>
                         
                     </div>
                 </div>
             </div>
-            
-        </>
-    ):null}
-        
     </>
-    
-    
     )
 }
 
