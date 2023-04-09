@@ -12,7 +12,7 @@ const MyWork = () => {
           md:px-10
           lg:px-10
           xl:px-20
-          2xl:px-96 xl:mb-14
+          2xl:px-64 xl:mb-14
         ">
           <h1 className="text-3xl font-play text-gold mb-5 lg:mb-10">Recent Work</h1>
           <p className="
