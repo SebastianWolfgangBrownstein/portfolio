@@ -18,7 +18,7 @@ const Startup = ({
     return (
         <>
         
-        <div id="startup" className="
+        <div className="
             flex flex-col justify-between px-5 pt-0 pb-4 bg-gunmetal border border-gold rounded-xl shadow-lg
             xs:flex xs:flex-col xs:pb-9
             sm:flex sm:flex-col sm:pt-2 sm:pb-16

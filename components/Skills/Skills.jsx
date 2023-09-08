@@ -18,6 +18,7 @@ const Skills = () => {
                         height={48}
                         fillColor="#05062d"
                         className="absolute left-4 top-3"
+                        title="ArchitectIcon"
                     />
                 )}
                 title="System Architect"
@@ -35,6 +36,7 @@ const Skills = () => {
                             height={48}
                             fillColor="#05062d"
                             className="absolute left-4 top-3.5"
+                            title="CodeIcon"
                         />
                 )}
                 title="Backend Developer"
@@ -54,6 +56,7 @@ const Skills = () => {
                             height={48}
                             fillColor="#05062d"
                             className="absolute left-4 top-3.5"
+                            title="RollerIcon"
                         />
                 )}
                 title="Frontend Developer"

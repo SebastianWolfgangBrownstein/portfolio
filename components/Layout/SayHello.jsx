@@ -13,6 +13,7 @@ const SayHello = () => {
                     thickness="light"
                     fillColor='#d6ad30'
                     className="md:hidden"
+                    title="WaveIcon"
                 />
             </div>
         </Link>

@@ -29,6 +29,7 @@ export const Footer = () => {
                             width={28}
                             height={28}
                             fillColor='#0f1314'
+                            title="LinkedinIcon"
                         />
                     </div>
                 </a>
@@ -38,6 +39,7 @@ export const Footer = () => {
                                 width={50}
                                 height={50}
                                 fillColor="#3454d1"
+                                title="GithubIcon"
                             />
                     </div>
                 </a>
@@ -47,6 +49,7 @@ export const Footer = () => {
                             width={27}
                             height={27}
                             fillColor='#0f1314'
+                            title="MailIcon"
                         />
                     </div>
                 </a>

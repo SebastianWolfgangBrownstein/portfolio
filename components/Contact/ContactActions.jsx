@@ -13,6 +13,7 @@ const ContactActions = ({
                     width={20}
                     height={20}
                     fillColor="#d6ad30"
+                    title="UndoIcon"
                 />
             </button>
             <Link href="/" role="button">
@@ -20,6 +21,7 @@ const ContactActions = ({
                     width={22}
                     height={22}
                     fillColor="#d6ad30"
+                    title="CloseIcon"
                 />
             </Link>
         </div>

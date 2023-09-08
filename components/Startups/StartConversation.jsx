@@ -21,6 +21,7 @@ const StartConversation = () => {
                                 width={26}
                                 height={26}
                                 fillColor={hovering ? "#000000":"#3454d1"}
+                                title="ChatIcon"
                             />
                         </div>
                         <p>Start a conversation</p>
