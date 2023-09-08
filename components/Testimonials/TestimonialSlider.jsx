@@ -23,6 +23,12 @@ const TestimonialSlider = () => {
                 quote="Sebastian is a highly professional, strategic, engaged, hard working senior web & app developer. I owe him a huge THANK YOU for showing me and teaching me the first steps in development and coding. He is a great teacher with a huge patience tolerance. Thank you!"
                 imagePath="/images/MiloshProfile.jpeg"
             />
+            <Testimonial 
+                author="Sandra Cowper"
+                authorTitle="Full Stack Developer, CamBling"
+                quote="Sebastian was an outstanding Lead Software Developer and mentor to me during my time working on his team. His quick grasp of concepts, patient teaching style, and extensive knowledge made my time working alongside him incredibly rewarding. I feel fortunate to have had the opportunity to learn from such a skilled and dedicated professional. I have no doubt that he will continue to excel and inspire others in the software development world."
+                imagePath="/images/SandyHeadshot.jpeg"
+            />
         </Carousel>
     )
 }
