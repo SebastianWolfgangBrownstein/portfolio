@@ -14,15 +14,14 @@ const NavItem = ({
 }) => {
 
     return (
-        <a href={`#${linkId}`}>
-            <li 
-                className={cx({
-                    navItem: true,
-                    active: index === isActive ? true : false
-                })}
-            >{label}</li>
-        </a>
-        
+        <li 
+            className={cx({
+                navItem: true,
+                active: index === isActive ? true : false
+            })}
+        >
+            <a href={`#${linkId}`}>{label}</a>
+        </li>
     )
     
 }

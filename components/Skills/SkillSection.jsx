@@ -20,7 +20,7 @@ const SkillSection = ({
         <p className="mb-16 lg:mb-10 text-lg text-tan-150">{summary}</p>
 
         <div className="mb-14 lg:mb-10">
-            <h3 className="mb-2 text-byzantine">{specificsTitle}</h3>
+            <h2 className="mb-2 text-byzantine">{specificsTitle}</h2>
             <p className="text-tan-150">
                 {specificsList}
             </p>

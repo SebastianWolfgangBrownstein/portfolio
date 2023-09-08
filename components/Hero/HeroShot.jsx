@@ -19,7 +19,7 @@ const HeroShot = () => {
     return (
         <div className="z-10 flex justify-center mb-5">
             <div className={classes.glitch}>
-                <Image src='/images/HeroShotSepia.png' width={350} height={800} quality={100} alt="Image of Sebastian Brownstein" priority={true}/>
+                <Image src='/images/HeroShotSepia.webp' width={350} height={800} quality={100} alt="Image of Sebastian Brownstein" priority={true}/>
                 
                 
                 <div className={glitching ? classes.glitchLayers : classes.glitchHidden}>

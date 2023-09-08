@@ -22,14 +22,14 @@ const startupDetails = {
         team: [
             {
                 name: "Sebastian Brownstein",
-                photoUrl: "/images/SebastianHeadshot.jpeg",
+                photoUrl: "/images/SebastianHeadshot.webp",
                 title: "Founder & Lead Developer"
             }
         ]
     },
     arxade: {
         name: 'Arxade',
-        logoPath: '/images/ArxadeLogo.png',
+        logoPath: '/images/ArxadeLogo.webp',
         summary: 'A suite of backend APIs for live streaming, real-time communication, and multiplayer gaming.',
         description: `
             Arxade is a collection of microservices for one-to-many live streaming, real-time communication, user payments 
@@ -46,19 +46,19 @@ const startupDetails = {
         team: [
             {
                 name: "Sebastian Brownstein",
-                photoUrl: "/images/SebastianHeadshot.jpeg",
+                photoUrl: "/images/SebastianHeadshot.webp",
                 title: "Founder & Lead Developer"
             },
             {
                 name: "Chuck Mudarski",
-                photoUrl: "/images/ChuckProfile.png",
+                photoUrl: "/images/ChuckProfile.webp",
                 title: "Head of Marketing"
             },
         ]
     },
     cambling: {
         name: 'CamBling',
-        logoPath: '/images/CamBlingLogo.png',
+        logoPath: '/images/CamBlingLogo.webp',
         summary: 'A gamified adult webcam site with a fully modernized design & disruptive performer policies.',
         description: `
             CamBling was a full-featured adult live streaming platform. My development work included: One-to-many live streaming support 
@@ -78,34 +78,34 @@ const startupDetails = {
         team: [
             {
                 name: "Sebastian Brownstein",
-                photoUrl: "/images/SebastianHeadshot.jpeg",
+                photoUrl: "/images/SebastianHeadshot.webp",
                 title: "Founder & Lead Developer"
             },
             {
                 name: "Chuck Mudarski",
-                photoUrl: "/images/ChuckProfile.png",
+                photoUrl: "/images/ChuckProfile.webp",
                 title: "Head of Marketing"
             },
             {
                 name: "Milosh Spasik",
-                photoUrl: "/images/MiloshProfile.jpeg",
+                photoUrl: "/images/MiloshProfile.webp",
                 title: "Frontend Developer"
             },
             {
                 name: "Sandy Cowper",
-                photoUrl: "/images/SandyHeadshot.jpeg",
+                photoUrl: "/images/SandyHeadshot.webp",
                 title: "Junior Developer"
             },
             {
                 name: "Jack Mackey",
-                photoUrl: "/images/JackHeadshot.jpeg",
+                photoUrl: "/images/JackHeadshot.webp",
                 title: "Marketing & Outreach"
             }
         ]
     },
     personafi: {
         name: 'Personafi',
-        logoPath: '/images/PersonafiLogo.png',
+        logoPath: '/images/PersonafiLogo.webp',
         summary: 'A marketplace of voice & personality skins for electronic personal assistants like Alexa.',
         description: `
             Personafi was an early stage marketplace concept for custom voice and personality modules compatible with 
@@ -122,7 +122,7 @@ const startupDetails = {
         team: [
             {
                 name: "Sebastian Brownstein",
-                photoUrl: "/images/SebastianHeadshot.jpeg",
+                photoUrl: "/images/SebastianHeadshot.webp",
                 title: "Founder & Lead Developer"
             }
         ]
